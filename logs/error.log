@@ -1,0 +1,996 @@
+2018-09-17 16:05:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index could not be found.
+Exception Attributes: array (
+  'class' => 'Index',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /index
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-09-17 16:17:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Books_categories could not be found.
+Exception Attributes: array (
+  'class' => 'Books_categories',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /books_categories
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-09-17 16:22:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'BooksCategories.book_id' in 'where clause'
+Request URL: /books/view/1
+Referer URL: http://localhost/TP1_EtienneVaillancourt/books
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectWithPivotLoader.php(168): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectLoader.php(125): Cake\ORM\Association\Loader\SelectWithPivotLoader->_buildResultMap(Object(Cake\ORM\Query), Array)
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(585): Cake\ORM\Association\Loader\SelectLoader->buildEagerLoader(Array)
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(700): Cake\ORM\Association\BelongsToMany->eagerLoader(Array)
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\ORM\EagerLoader->loadExternal(Object(Cake\ORM\Query), Object(Cake\Database\Statement\BufferedStatement))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\BooksController.php(41): Cake\ORM\Table->get(Array, Array)
+#21 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\BooksController->view('1')
+#22 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#24 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-09-17 16:23:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'book_id' in 'where clause'
+Request URL: /books/add
+Referer URL: http://localhost/TP1_EtienneVaillancourt/books/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(326): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1402): Cake\ORM\Query->toArray()
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1222): Cake\ORM\Association\BelongsToMany->_collectJointEntities(Object(App\Model\Entity\Book), Array)
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Association\BelongsToMany->Cake\ORM\Association\{closure}(Object(Cake\Database\Connection))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1244): Cake\Database\Connection->transactional(Object(Closure))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(729): Cake\ORM\Association\BelongsToMany->replaceLinks(Object(App\Model\Entity\Book), Array, Array)
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(321): Cake\ORM\Association\BelongsToMany->saveAssociated(Object(App\Model\Entity\Book), Array)
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(295): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\BelongsToMany), Object(App\Model\Entity\Book), Array, Array)
+#18 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(260): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\BooksTable), Object(App\Model\Entity\Book), Array, Array, true)
+#19 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2034): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\BooksTable), Object(App\Model\Entity\Book), Array, Array)
+#20 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2007): Cake\ORM\Table->_onSaveSuccess(Object(App\Model\Entity\Book), Object(ArrayObject))
+#21 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1914): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Book), Object(ArrayObject))
+#22 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1627): Cake\ORM\Table->Cake\ORM\{closure}()
+#23 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#24 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1628): Cake\Database\Connection->transactional(Object(Closure))
+#25 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1915): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#26 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\BooksController.php(57): Cake\ORM\Table->save(Object(App\Model\Entity\Book))
+#27 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\BooksController->add()
+#28 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#29 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#30 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#40 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#41 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#42 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#43 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#44 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#45 {main}
+
+
+2018-09-17 16:25:32 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'BooksCategories.category_id' in 'on clause'
+Request URL: /books/view/1
+Referer URL: http://localhost/TP1_EtienneVaillancourt/books
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectWithPivotLoader.php(168): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectLoader.php(125): Cake\ORM\Association\Loader\SelectWithPivotLoader->_buildResultMap(Object(Cake\ORM\Query), Array)
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(585): Cake\ORM\Association\Loader\SelectLoader->buildEagerLoader(Array)
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(700): Cake\ORM\Association\BelongsToMany->eagerLoader(Array)
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\ORM\EagerLoader->loadExternal(Object(Cake\ORM\Query), Object(Cake\Database\Statement\BufferedStatement))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\BooksController.php(41): Cake\ORM\Table->get(Array, Array)
+#21 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\BooksController->view('1')
+#22 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#24 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-09-17 16:26:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'BooksCategories.category_id' in 'on clause'
+Request URL: /books/view/3
+Referer URL: http://localhost/TP1_EtienneVaillancourt/books
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectWithPivotLoader.php(168): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectLoader.php(125): Cake\ORM\Association\Loader\SelectWithPivotLoader->_buildResultMap(Object(Cake\ORM\Query), Array)
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(585): Cake\ORM\Association\Loader\SelectLoader->buildEagerLoader(Array)
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(700): Cake\ORM\Association\BelongsToMany->eagerLoader(Array)
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\ORM\EagerLoader->loadExternal(Object(Cake\ORM\Query), Object(Cake\Database\Statement\BufferedStatement))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\BooksController.php(41): Cake\ORM\Table->get(Array, Array)
+#21 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\BooksController->view('3')
+#22 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#24 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-09-17 16:26:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'BooksCategories.category_id' in 'on clause'
+Request URL: /books/view/3
+Referer URL: http://localhost/TP1_EtienneVaillancourt/books
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectWithPivotLoader.php(168): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectLoader.php(125): Cake\ORM\Association\Loader\SelectWithPivotLoader->_buildResultMap(Object(Cake\ORM\Query), Array)
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(585): Cake\ORM\Association\Loader\SelectLoader->buildEagerLoader(Array)
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(700): Cake\ORM\Association\BelongsToMany->eagerLoader(Array)
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\ORM\EagerLoader->loadExternal(Object(Cake\ORM\Query), Object(Cake\Database\Statement\BufferedStatement))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\BooksController.php(41): Cake\ORM\Table->get(Array, Array)
+#21 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\BooksController->view('3')
+#22 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#24 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-09-17 16:27:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'BooksCategories.category_id' in 'on clause'
+Request URL: /books/view/3
+Referer URL: http://localhost/TP1_EtienneVaillancourt/books
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectWithPivotLoader.php(168): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\Loader\SelectLoader.php(125): Cake\ORM\Association\Loader\SelectWithPivotLoader->_buildResultMap(Object(Cake\ORM\Query), Array)
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(585): Cake\ORM\Association\Loader\SelectLoader->buildEagerLoader(Array)
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(700): Cake\ORM\Association\BelongsToMany->eagerLoader(Array)
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\ORM\EagerLoader->loadExternal(Object(Cake\ORM\Query), Object(Cake\Database\Statement\BufferedStatement))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#18 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(482): Cake\ORM\Query->first()
+#19 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#20 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\BooksController.php(41): Cake\ORM\Table->get(Array, Array)
+#21 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\BooksController->view('3')
+#22 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#23 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#24 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#38 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#39 {main}
+
+
+2018-09-17 16:30:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categorie_id' in 'where clause'
+Request URL: /books/add
+Referer URL: http://localhost/TP1_EtienneVaillancourt/books/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(326): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1402): Cake\ORM\Query->toArray()
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1222): Cake\ORM\Association\BelongsToMany->_collectJointEntities(Object(App\Model\Entity\Book), Array)
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Association\BelongsToMany->Cake\ORM\Association\{closure}(Object(Cake\Database\Connection))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1244): Cake\Database\Connection->transactional(Object(Closure))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(729): Cake\ORM\Association\BelongsToMany->replaceLinks(Object(App\Model\Entity\Book), Array, Array)
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(321): Cake\ORM\Association\BelongsToMany->saveAssociated(Object(App\Model\Entity\Book), Array)
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(295): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\BelongsToMany), Object(App\Model\Entity\Book), Array, Array)
+#18 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(260): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\BooksTable), Object(App\Model\Entity\Book), Array, Array, true)
+#19 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2034): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\BooksTable), Object(App\Model\Entity\Book), Array, Array)
+#20 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2007): Cake\ORM\Table->_onSaveSuccess(Object(App\Model\Entity\Book), Object(ArrayObject))
+#21 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1914): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Book), Object(ArrayObject))
+#22 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1627): Cake\ORM\Table->Cake\ORM\{closure}()
+#23 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#24 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1628): Cake\Database\Connection->transactional(Object(Closure))
+#25 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1915): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#26 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\BooksController.php(57): Cake\ORM\Table->save(Object(App\Model\Entity\Book))
+#27 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\BooksController->add()
+#28 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#29 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#30 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#40 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#41 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#42 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#43 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#44 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#45 {main}
+
+
+2018-09-17 16:31:09 Error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (5, ), expecting (book_id, categorie_id)
+Request URL: /books/add
+Referer URL: http://localhost/TP1_EtienneVaillancourt/books/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2001): Cake\ORM\Table->_insert(Object(App\Model\Entity\BooksCategory), Array)
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1914): Cake\ORM\Table->_processSave(Object(App\Model\Entity\BooksCategory), Object(ArrayObject))
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1627): Cake\ORM\Table->Cake\ORM\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1628): Cake\Database\Connection->transactional(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1915): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(851): Cake\ORM\Table->save(Object(App\Model\Entity\BooksCategory), Object(ArrayObject))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(795): Cake\ORM\Association\BelongsToMany->_saveLinks(Object(App\Model\Entity\Book), Array, Array)
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1225): Cake\ORM\Association\BelongsToMany->_saveTarget(Object(App\Model\Entity\Book), Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Association\BelongsToMany->Cake\ORM\Association\{closure}(Object(Cake\Database\Connection))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1244): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(729): Cake\ORM\Association\BelongsToMany->replaceLinks(Object(App\Model\Entity\Book), Array, Array)
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(321): Cake\ORM\Association\BelongsToMany->saveAssociated(Object(App\Model\Entity\Book), Array)
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(295): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\BelongsToMany), Object(App\Model\Entity\Book), Array, Array)
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(260): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\BooksTable), Object(App\Model\Entity\Book), Array, Array, true)
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2034): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\BooksTable), Object(App\Model\Entity\Book), Array, Array)
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2007): Cake\ORM\Table->_onSaveSuccess(Object(App\Model\Entity\Book), Object(ArrayObject))
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1914): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Book), Object(ArrayObject))
+#18 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1627): Cake\ORM\Table->Cake\ORM\{closure}()
+#19 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#20 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1628): Cake\Database\Connection->transactional(Object(Closure))
+#21 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1915): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#22 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\BooksController.php(57): Cake\ORM\Table->save(Object(App\Model\Entity\Book))
+#23 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\BooksController->add()
+#24 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#25 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#26 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+
+2018-09-17 16:31:54 Error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (6, ), expecting (book_id, categorie_id)
+Request URL: /books/add
+Referer URL: http://localhost/TP1_EtienneVaillancourt/books/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2001): Cake\ORM\Table->_insert(Object(App\Model\Entity\BooksCategory), Array)
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1914): Cake\ORM\Table->_processSave(Object(App\Model\Entity\BooksCategory), Object(ArrayObject))
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1627): Cake\ORM\Table->Cake\ORM\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1628): Cake\Database\Connection->transactional(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1915): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(851): Cake\ORM\Table->save(Object(App\Model\Entity\BooksCategory), Object(ArrayObject))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(795): Cake\ORM\Association\BelongsToMany->_saveLinks(Object(App\Model\Entity\Book), Array, Array)
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1225): Cake\ORM\Association\BelongsToMany->_saveTarget(Object(App\Model\Entity\Book), Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Association\BelongsToMany->Cake\ORM\Association\{closure}(Object(Cake\Database\Connection))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1244): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(729): Cake\ORM\Association\BelongsToMany->replaceLinks(Object(App\Model\Entity\Book), Array, Array)
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(321): Cake\ORM\Association\BelongsToMany->saveAssociated(Object(App\Model\Entity\Book), Array)
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(295): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\BelongsToMany), Object(App\Model\Entity\Book), Array, Array)
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(260): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\BooksTable), Object(App\Model\Entity\Book), Array, Array, true)
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2034): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\BooksTable), Object(App\Model\Entity\Book), Array, Array)
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2007): Cake\ORM\Table->_onSaveSuccess(Object(App\Model\Entity\Book), Object(ArrayObject))
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1914): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Book), Object(ArrayObject))
+#18 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1627): Cake\ORM\Table->Cake\ORM\{closure}()
+#19 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#20 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1628): Cake\Database\Connection->transactional(Object(Closure))
+#21 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1915): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#22 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\BooksController.php(57): Cake\ORM\Table->save(Object(App\Model\Entity\Book))
+#23 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\BooksController->add()
+#24 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#25 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#26 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+
+2018-09-17 16:34:10 Error: [RuntimeException] Cannot insert row, some of the primary key values are missing. Got (7, ), expecting (book_id, categorie_id)
+Request URL: /books/add
+Referer URL: http://localhost/TP1_EtienneVaillancourt/books/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2001): Cake\ORM\Table->_insert(Object(App\Model\Entity\BooksCategory), Array)
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1914): Cake\ORM\Table->_processSave(Object(App\Model\Entity\BooksCategory), Object(ArrayObject))
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1627): Cake\ORM\Table->Cake\ORM\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1628): Cake\Database\Connection->transactional(Object(Closure))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1915): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(851): Cake\ORM\Table->save(Object(App\Model\Entity\BooksCategory), Object(ArrayObject))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(795): Cake\ORM\Association\BelongsToMany->_saveLinks(Object(App\Model\Entity\Book), Array, Array)
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1225): Cake\ORM\Association\BelongsToMany->_saveTarget(Object(App\Model\Entity\Book), Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Association\BelongsToMany->Cake\ORM\Association\{closure}(Object(Cake\Database\Connection))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1244): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(729): Cake\ORM\Association\BelongsToMany->replaceLinks(Object(App\Model\Entity\Book), Array, Array)
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(321): Cake\ORM\Association\BelongsToMany->saveAssociated(Object(App\Model\Entity\Book), Array)
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(295): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\BelongsToMany), Object(App\Model\Entity\Book), Array, Array)
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(260): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\BooksTable), Object(App\Model\Entity\Book), Array, Array, true)
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2034): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\BooksTable), Object(App\Model\Entity\Book), Array, Array)
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2007): Cake\ORM\Table->_onSaveSuccess(Object(App\Model\Entity\Book), Object(ArrayObject))
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1914): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Book), Object(ArrayObject))
+#18 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1627): Cake\ORM\Table->Cake\ORM\{closure}()
+#19 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#20 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1628): Cake\Database\Connection->transactional(Object(Closure))
+#21 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1915): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#22 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\BooksController.php(57): Cake\ORM\Table->save(Object(App\Model\Entity\Book))
+#23 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\BooksController->add()
+#24 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#25 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\BooksController))
+#26 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+
+
+2018-09-17 16:46:21 Error: Fatal Error (256): [ParseError] syntax error, unexpected => (T_DOUBLE_ARROW)
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(124): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(91): Cake\Error\ExceptionRenderer->_getController()
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\PHP7ErrorException))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\PHP7ErrorException))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(177): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#14 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#15 {main} in [C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ErrorHandler.php, line 180]
+
+
+2018-09-17 16:46:21 Error: Fatal Error (256): [ParseError] syntax error, unexpected => (T_DOUBLE_ARROW)
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(124): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(91): Cake\Error\ExceptionRenderer->_getController()
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\FatalErrorException))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\FatalErrorException))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(231): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\FatalErrorException))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(139): Cake\Error\BaseErrorHandler->handleFatalError(256, '[ParseError] sy...', 'C:\\Program File...', 180)
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\config\bootstrap.php(41): Cake\Error\BaseErrorHandler->handleError(256, '[ParseError] sy...', 'C:\\Program File...', 180, Array)
+#16 [internal function]: Cake\Core\BasePlugin->{closure}(256, '[ParseError] sy...', 'C:\\Program File...', 180, Array)
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ErrorHandler.php(180): trigger_error('[ParseError] sy...', 256)
+#18 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ErrorHandler.php(141): Cake\Error\ErrorHandler->_logInternalError(Object(ParseError))
+#19 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(ParseError))
+#20 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(177): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#21 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#22 {main} in [C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ErrorHandler.php, line 180]
+
+
+2018-09-17 16:46:21 Error: Fatal Error (256): [ParseError] syntax error, unexpected => (T_DOUBLE_ARROW)
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\ in [C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ErrorHandler.php, line 180]
+
+
+2018-09-17 16:46:26 Error: Fatal Error (256): [ParseError] syntax error, unexpected => (T_DOUBLE_ARROW)
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(124): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(91): Cake\Error\ExceptionRenderer->_getController()
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\PHP7ErrorException))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\PHP7ErrorException))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(177): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#14 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#15 {main} in [C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ErrorHandler.php, line 180]
+
+
+2018-09-17 16:46:26 Error: Fatal Error (256): [ParseError] syntax error, unexpected => (T_DOUBLE_ARROW)
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(124): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ExceptionRenderer.php(91): Cake\Error\ExceptionRenderer->_getController()
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\FatalErrorException))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\FatalErrorException))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(231): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\FatalErrorException))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(139): Cake\Error\BaseErrorHandler->handleFatalError(256, '[ParseError] sy...', 'C:\\Program File...', 180)
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\config\bootstrap.php(41): Cake\Error\BaseErrorHandler->handleError(256, '[ParseError] sy...', 'C:\\Program File...', 180, Array)
+#16 [internal function]: Cake\Core\BasePlugin->{closure}(256, '[ParseError] sy...', 'C:\\Program File...', 180, Array)
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ErrorHandler.php(180): trigger_error('[ParseError] sy...', 256)
+#18 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ErrorHandler.php(141): Cake\Error\ErrorHandler->_logInternalError(Object(ParseError))
+#19 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(ParseError))
+#20 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(177): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#21 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#22 {main} in [C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ErrorHandler.php, line 180]
+
+
+2018-09-17 16:46:26 Error: Fatal Error (256): [ParseError] syntax error, unexpected => (T_DOUBLE_ARROW)
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(412): include('C:\\Program File...')
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#8 C:\ in [C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\ErrorHandler.php, line 180]
+
+
+2018-09-17 16:47:08 Error: [Error] Call to a member function identify() on boolean
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost/TP1_EtienneVaillancourt/users/login?redirect=%2Fusers
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\UsersController->login()
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-09-17 16:47:49 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`librairie`.`authors`, CONSTRAINT `authors_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /users/delete/1
+Referer URL: http://localhost/TP1_EtienneVaillancourt/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2361): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2282): Cake\ORM\Table->_processDelete(Object(App\Model\Entity\User), Object(ArrayObject))
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1627): Cake\ORM\Table->Cake\ORM\{closure}()
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Database\Connection.php(726): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(1628): Cake\Database\Connection->transactional(Object(Closure))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2283): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\UsersController.php(111): Cake\ORM\Table->delete(Object(App\Model\Entity\User))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\UsersController->delete('1')
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#32 {main}
+
+
+2018-09-17 16:52:00 Error: [Error] Call to a member function success() on boolean
+Request URL: /users/edit/1
+Referer URL: http://localhost/TP1_EtienneVaillancourt/users/edit/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\UsersController->edit('1')
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-09-17 16:55:11 Error: [Error] Call to a member function success() on boolean
+Request URL: /users/edit/1
+Referer URL: http://localhost/TP1_EtienneVaillancourt/users/edit/1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\UsersController->edit('1')
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-09-17 16:57:20 Error: [Error] Class 'App\Model\Entity\DefaultPasswordHasher' not found
+Request URL: /users/add
+Referer URL: http://localhost/TP1_EtienneVaillancourt/users/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Datasource\EntityTrait.php(264): App\Model\Entity\User->_setPassword('123456')
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Marshaller.php(602): Cake\ORM\Entity->set(Array)
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Table.php(2705): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\User), Array, Array)
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Controller\UsersController.php(65): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\User), Array)
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\UsersController->add()
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2018-09-17 17:23:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Logout could not be found.
+Exception Attributes: array (
+  'class' => 'Logout',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /logout
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-09-19 19:50:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Students could not be found.
+Exception Attributes: array (
+  'class' => 'Students',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /students
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-09-19 19:50:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Students could not be found.
+Exception Attributes: array (
+  'class' => 'Students',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /students
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-09-19 19:51:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admins could not be found.
+Exception Attributes: array (
+  'class' => 'Admins',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /admins
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-09-19 19:51:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admins could not be found.
+Exception Attributes: array (
+  'class' => 'Admins',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /admins
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-09-19 19:51:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Admins could not be found.
+Exception Attributes: array (
+  'class' => 'Admins',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /admins
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-09-19 19:51:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Students could not be found.
+Exception Attributes: array (
+  'class' => 'Students',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /students
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
