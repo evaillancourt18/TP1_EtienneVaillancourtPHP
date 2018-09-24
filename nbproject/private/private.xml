@@ -4,11 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/TP1_EtienneVaillancourt/src/Controller/AppController.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/TP1_EtienneVaillancourt/src/Controller/AuthorsController.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/TP1_EtienneVaillancourt/src/Template/Authors/edit.ctp</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/TP1_EtienneVaillancourt/src/Controller/UsersController.php</file>
-            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/TP1_EtienneVaillancourt/src/Template/Authors/add.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/TP1_EtienneVaillancourt/config/routes.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/TP1_EtienneVaillancourt/src/Template/Layout/default.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/TP1_EtienneVaillancourt/src/Template/Pages/home.ctp</file>
+            <file>file:/C:/Program%20Files%20(x86)/Ampps/www/TP1_EtienneVaillancourt/src/Model/Table/UsersTable.php</file>
             <file>file:/C:/Program%20Files%20(x86)/Ampps/www/TP1_EtienneVaillancourt/src/Template/Users/add.ctp</file>
         </group>
     </open-files>

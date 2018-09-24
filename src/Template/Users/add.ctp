@@ -9,7 +9,7 @@
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Authors'), ['controller' => 'Authors', 'action' => 'index']) ?></li>
-       <?= $this->Html->link(__('New Author'), ['controller' => 'Authors', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('New Author'), ['controller' => 'Authors', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="users form large-9 medium-8 columns content">
@@ -19,6 +19,8 @@
         <?php
             echo $this->Form->control('email');
             echo $this->Form->control('password');
+            echo $this->Form->label('type');
+            echo $this->Form->select('type',[0,1,2]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

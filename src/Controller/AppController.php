@@ -76,9 +76,28 @@ class AppController extends Controller
         $this->loadComponent('Security');
     }
     
-    public function isAuthorized($user)
-{
-    // By default deny access.
-    return false;
+    public function isAuthorized($user){
+	
+	$action = $this->request->getParam('action');
+	
+
+	if(in_array($action,['add'])){
+       
+		if ($user['type']==1 || $user['type']==2){
+                    return true;
+                }
+                
+        }else if(in_array($action,['edit','delete'])){
+            if ($user('type')==1){
+                return true;
+            }
+            
+        }else if(in_array($action,['view'])){
+            return true;
+        }else{
+            return false;
+        }
+        
+    }
 }
-}
+                

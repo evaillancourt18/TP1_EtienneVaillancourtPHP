@@ -113,23 +113,5 @@ class AuthorsController extends AppController
         return $this->redirect(['action' => 'index']);
     }
     
-    public function isAuthorized($user)
-{
-    $action = $this->request->getParam('action');
-    // The add and tags actions are always allowed to logged in users.
-    if (in_array($action, ['add'])) {
-        return true;
-    }
 
-    // All other actions require a slug.
-    $slug = $this->request->getParam('pass.0');
-    if (!$slug) {
-        return false;
-    }
-
-    // Check that the article belongs to the current user.
-    $author = $this->Authors->findBySlug($slug)->first();
-
-    return $author->user_id === $user['id'];
-}
 }
