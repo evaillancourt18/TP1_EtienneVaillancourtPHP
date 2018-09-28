@@ -10,12 +10,12 @@ use Cake\ORM\Entity;
  * @property int $user_id
  * @property string $name
  * @property string $email
- * @property string $image
- * @property string $slug
+ * @property int $files_id
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
  * @property \App\Model\Entity\User $user
+ * @property \App\Model\Entity\File $file
  * @property \App\Model\Entity\Book[] $books
  */
 class Author extends Entity
@@ -34,11 +34,11 @@ class Author extends Entity
         'user_id' => true,
         'name' => true,
         'email' => true,
-        'image' => true,
-        'slug' => true,
+        'files_id' => true,
         'created' => true,
         'modified' => true,
         'user' => true,
+        'file' => true,
         'books' => true
     ];
 }

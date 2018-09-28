@@ -10,6 +10,8 @@
         <li><?= $this->Html->link(__('New Author'), ['action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Books'), ['controller' => 'Books', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Book'), ['controller' => 'Books', 'action' => 'add']) ?></li>
     </ul>
@@ -19,10 +21,10 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-				<th scope="col"><?= $this->Paginator->sort('user') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('user') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('email') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('image') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('files_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -34,7 +36,7 @@
                 <td><?= $author->has('user') ? $this->Html->link($author->user->email, ['controller' => 'Users', 'action' => 'view', $author->user->id]) : '' ?></td>
                 <td><?= h($author->name) ?></td>
                 <td><?= h($author->email) ?></td>
-                <td><?= h($author->image) ?></td>
+                <td><?= $author->has('file') ? $this->Html->link($author->file->name, ['controller' => 'Files', 'action' => 'view', $author->file->id]) : '' ?></td>
                 <td><?= h($author->created) ?></td>
                 <td><?= h($author->modified) ?></td>
                 <td class="actions">

@@ -13,6 +13,8 @@
         <li><?= $this->Html->link(__('New Author'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Books'), ['controller' => 'Books', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Book'), ['controller' => 'Books', 'action' => 'add']) ?> </li>
     </ul>
@@ -33,8 +35,8 @@
             <td><?= h($author->email) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Image') ?></th>
-            <td><?= h($author->image) ?></td>
+            <th scope="row"><?= __('File') ?></th>
+            <td><?= $author->has('file') ? $this->Html->link($author->file->name, ['controller' => 'Files', 'action' => 'view', $author->file->id]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>
@@ -60,6 +62,8 @@
             <?php foreach ($author->books as $books): ?>
             <tr>
                 <td><?= h($books->province->name) ?></td>
+                <td><?= h($books->author_id) ?></td>
+                <td><?= h($books->province_id) ?></td>
                 <td><?= h($books->title) ?></td>
                 <td><?= h($books->release_date) ?></td>
                 <td><?= h($books->created) ?></td>

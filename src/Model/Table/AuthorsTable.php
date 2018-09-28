@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
  * Authors Model
  *
  * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
+ * @property \App\Model\Table\FilesTable|\Cake\ORM\Association\BelongsTo $Files
  * @property \App\Model\Table\BooksTable|\Cake\ORM\Association\HasMany $Books
  *
  * @method \App\Model\Entity\Author get($primaryKey, $options = [])
@@ -35,8 +36,6 @@ class AuthorsTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
-		
-
 
         $this->setTable('authors');
         $this->setDisplayField('name');
@@ -46,6 +45,10 @@ class AuthorsTable extends Table
 
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id',
+            'joinType' => 'INNER'
+        ]);
+        $this->belongsTo('Files', [
+            'foreignKey' => 'files_id',
             'joinType' => 'INNER'
         ]);
         $this->hasMany('Books', [
@@ -76,18 +79,6 @@ class AuthorsTable extends Table
             ->requirePresence('email', 'create')
             ->notEmpty('email');
 
-        $validator
-            ->scalar('image')
-            ->maxLength('image', 255)
-            ->requirePresence('image', 'create')
-            ->notEmpty('image');
-
-        $validator
-            ->scalar('slug')
-            ->maxLength('slug', 255)
-            ->requirePresence('slug', 'create')
-            ->notEmpty('slug');
-
         return $validator;
     }
 
@@ -102,6 +93,7 @@ class AuthorsTable extends Table
     {
         $rules->add($rules->isUnique(['email']));
         $rules->add($rules->existsIn(['user_id'], 'Users'));
+        $rules->add($rules->existsIn(['files_id'], 'Files'));
 
         return $rules;
     }

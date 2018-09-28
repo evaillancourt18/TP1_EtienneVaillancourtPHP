@@ -18,6 +18,7 @@ class AuthorsControllerTest extends IntegrationTestCase
     public $fixtures = [
         'app.authors',
         'app.users',
+        'app.files',
         'app.books'
     ];
 

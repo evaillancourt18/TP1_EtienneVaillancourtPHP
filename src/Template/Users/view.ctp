@@ -42,7 +42,6 @@
             <tr>
                 <th scope="col"><?= __('Name') ?></th>
                 <th scope="col"><?= __('Email') ?></th>
-                <th scope="col"><?= __('Image') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -51,7 +50,6 @@
             <tr>
                 <td><?= h($authors->name) ?></td>
                 <td><?= h($authors->email) ?></td>
-                <td><?= h($authors->image) ?></td>
                 <td><?= h($authors->created) ?></td>
                 <td><?= h($authors->modified) ?></td>
                 <td class="actions">

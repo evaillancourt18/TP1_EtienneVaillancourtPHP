@@ -16,6 +16,8 @@
         <li><?= $this->Html->link(__('List Authors'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Books'), ['controller' => 'Books', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Book'), ['controller' => 'Books', 'action' => 'add']) ?></li>
     </ul>
@@ -28,8 +30,7 @@
             echo $this->Form->control('user_id', ['options' => $users]);
             echo $this->Form->control('name');
             echo $this->Form->control('email');
-            echo $this->Form->control('image');
-            echo $this->Form->hidden('slug', ['value'=>'blabla']);
+            echo $this->Form->control('files_id', ['options' => $files]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

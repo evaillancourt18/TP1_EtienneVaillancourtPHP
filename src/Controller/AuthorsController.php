@@ -21,7 +21,7 @@ class AuthorsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Users']
+            'contain' => ['Users', 'Files']
         ];
         $authors = $this->paginate($this->Authors);
 
@@ -38,7 +38,7 @@ class AuthorsController extends AppController
     public function view($id = null)
     {
         $author = $this->Authors->get($id, [
-            'contain' => ['Users', 'Books' => ['Provinces']]
+            'contain' => ['Users', 'Files', 'Books' => ['Provinces']]
         ]);
 
         $this->set('author', $author);
@@ -54,17 +54,22 @@ class AuthorsController extends AppController
         $author = $this->Authors->newEntity();
         if ($this->request->is('post')) {
             $author = $this->Authors->patchEntity($author, $this->request->getData());
+			
             
-            $author->user_id = $this->Auth->user('id');
+			$author->user_id = $this->Auth->user('id');
+						
             if ($this->Authors->save($author)) {
+				
                 $this->Flash->success(__('The author has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
-            }
+				
+				return $this->redirect(['action' => 'index']);
+			}
             $this->Flash->error(__('The author could not be saved. Please, try again.'));
-        }
-       $users = $this->Authors->Users->find('list', ['limit' => 200]);
-        $this->set(compact('author', $author));
+        
+		}
+        $users = $this->Authors->Users->find('list', ['limit' => 200]);
+        $files = $this->Authors->Files->find('list', ['limit' => 200]);
+        $this->set(compact('author', 'users', 'files'));
     }
 
     /**
@@ -74,14 +79,13 @@ class AuthorsController extends AppController
      * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($id)
+    public function edit($id = null)
     {
-        $author = $this->Authors
-                ->findById($id)
-                ->firstOrFail();
-        if ($this->request->is(['post', 'put'])) {
-          $this->Authors->patchEntity($author, $this->request->getData(),[
-        'accesibleFields' => ['user_id'=> false]]);
+        $author = $this->Authors->get($id, [
+            'contain' => []
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $author = $this->Authors->patchEntity($author, $this->request->getData());
             if ($this->Authors->save($author)) {
                 $this->Flash->success(__('The author has been saved.'));
 
@@ -90,7 +94,8 @@ class AuthorsController extends AppController
             $this->Flash->error(__('The author could not be saved. Please, try again.'));
         }
         $users = $this->Authors->Users->find('list', ['limit' => 200]);
-        $this->set(compact('author', $author));
+        $files = $this->Authors->Files->find('list', ['limit' => 200]);
+        $this->set(compact('author', 'users', 'files'));
     }
 
     /**
@@ -112,6 +117,4 @@ class AuthorsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
-    
-
 }
