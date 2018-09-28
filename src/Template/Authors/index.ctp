@@ -19,12 +19,10 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
+				<th scope="col"><?= $this->Paginator->sort('user') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('email') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('image') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('slug') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -33,12 +31,10 @@
         <tbody>
             <?php foreach ($authors as $author): ?>
             <tr>
-                <td><?= $this->Number->format($author->id) ?></td>
-                <td><?= $author->has('user') ? $this->Html->link($author->user->id, ['controller' => 'Users', 'action' => 'view', $author->user->id]) : '' ?></td>
+                <td><?= $author->has('user') ? $this->Html->link($author->user->email, ['controller' => 'Users', 'action' => 'view', $author->user->id]) : '' ?></td>
                 <td><?= h($author->name) ?></td>
                 <td><?= h($author->email) ?></td>
                 <td><?= h($author->image) ?></td>
-                <td><?= h($author->slug) ?></td>
                 <td><?= h($author->created) ?></td>
                 <td><?= h($author->modified) ?></td>
                 <td class="actions">

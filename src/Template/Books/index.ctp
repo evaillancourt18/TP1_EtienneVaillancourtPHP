@@ -21,7 +21,6 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('author_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('province_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('title') ?></th>
@@ -34,7 +33,6 @@
         <tbody>
             <?php foreach ($books as $book): ?>
             <tr>
-                <td><?= $this->Number->format($book->id) ?></td>
                 <td><?= $book->has('author') ? $this->Html->link($book->author->name, ['controller' => 'Authors', 'action' => 'view', $book->author->id]) : '' ?></td>
                 <td><?= $book->has('province') ? $this->Html->link($book->province->name, ['controller' => 'Provinces', 'action' => 'view', $book->province->id]) : '' ?></td>
                 <td><?= h($book->title) ?></td>

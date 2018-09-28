@@ -22,7 +22,7 @@
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('User') ?></th>
-            <td><?= $author->has('user') ? $this->Html->link($author->user->id, ['controller' => 'Users', 'action' => 'view', $author->user->id]) : '' ?></td>
+            <td><?= $author->has('user') ? $this->Html->link($author->user->email, ['controller' => 'Users', 'action' => 'view', $author->user->id]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Name') ?></th>
@@ -35,14 +35,6 @@
         <tr>
             <th scope="row"><?= __('Image') ?></th>
             <td><?= h($author->image) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Slug') ?></th>
-            <td><?= h($author->slug) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($author->id) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>
@@ -58,9 +50,7 @@
         <?php if (!empty($author->books)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Author Id') ?></th>
-                <th scope="col"><?= __('Province Id') ?></th>
+                <th scope="col"><?= __('Province') ?></th>
                 <th scope="col"><?= __('Title') ?></th>
                 <th scope="col"><?= __('Release Date') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
@@ -69,9 +59,7 @@
             </tr>
             <?php foreach ($author->books as $books): ?>
             <tr>
-                <td><?= h($books->id) ?></td>
-                <td><?= h($books->author_id) ?></td>
-                <td><?= h($books->province_id) ?></td>
+                <td><?= h($books->province->name) ?></td>
                 <td><?= h($books->title) ?></td>
                 <td><?= h($books->release_date) ?></td>
                 <td><?= h($books->created) ?></td>

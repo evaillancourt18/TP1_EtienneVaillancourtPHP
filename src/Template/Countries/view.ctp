@@ -23,10 +23,6 @@
             <td><?= h($country->name) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($country->id) ?></td>
-        </tr>
-        <tr>
             <th scope="row"><?= __('Created') ?></th>
             <td><?= h($country->created) ?></td>
         </tr>
@@ -40,8 +36,6 @@
         <?php if (!empty($country->provinces)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Country Id') ?></th>
                 <th scope="col"><?= __('Name') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
@@ -49,8 +43,6 @@
             </tr>
             <?php foreach ($country->provinces as $provinces): ?>
             <tr>
-                <td><?= h($provinces->id) ?></td>
-                <td><?= h($provinces->country_id) ?></td>
                 <td><?= h($provinces->name) ?></td>
                 <td><?= h($provinces->created) ?></td>
                 <td><?= h($provinces->modified) ?></td>

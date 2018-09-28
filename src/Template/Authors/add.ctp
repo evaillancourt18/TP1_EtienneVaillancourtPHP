@@ -23,7 +23,7 @@
             echo $this->Form->control('name');
             echo $this->Form->control('email');
             echo $this->Form->control('image');
-            echo $this->Form->control('slug');
+            echo $this->Form->hidden('slug', ['value'=>'blabla']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

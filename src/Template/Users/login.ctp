@@ -4,3 +4,4 @@
 <?= $this->Form->control('password') ?>
 <?= $this->Form->button('Login') ?>
 <?= $this->Form->end() ?>
+<?= $this->Html->link(__('New User'), ['action' => 'addVisitor']) ?>

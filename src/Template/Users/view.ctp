@@ -16,19 +16,15 @@
     </ul>
 </nav>
 <div class="users view large-9 medium-8 columns content">
-    <h3><?= h($user->id) ?></h3>
+    <h3><?= h($user->email) ?></h3>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('Email') ?></th>
             <td><?= h($user->email) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Password') ?></th>
-            <td><?= h($user->password) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($user->id) ?></td>
+            <th scope="row"><?= __('Type') ?></th>
+            <td><?= h($user->type) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>
@@ -44,24 +40,18 @@
         <?php if (!empty($user->authors)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('User Id') ?></th>
                 <th scope="col"><?= __('Name') ?></th>
                 <th scope="col"><?= __('Email') ?></th>
                 <th scope="col"><?= __('Image') ?></th>
-                <th scope="col"><?= __('Slug') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
             <?php foreach ($user->authors as $authors): ?>
             <tr>
-                <td><?= h($authors->id) ?></td>
-                <td><?= h($authors->user_id) ?></td>
                 <td><?= h($authors->name) ?></td>
                 <td><?= h($authors->email) ?></td>
                 <td><?= h($authors->image) ?></td>
-                <td><?= h($authors->slug) ?></td>
                 <td><?= h($authors->created) ?></td>
                 <td><?= h($authors->modified) ?></td>
                 <td class="actions">

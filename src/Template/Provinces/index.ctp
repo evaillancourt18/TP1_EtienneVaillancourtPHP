@@ -19,7 +19,6 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('country_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
@@ -30,7 +29,6 @@
         <tbody>
             <?php foreach ($provinces as $province): ?>
             <tr>
-                <td><?= $this->Number->format($province->id) ?></td>
                 <td><?= $province->has('country') ? $this->Html->link($province->country->name, ['controller' => 'Countries', 'action' => 'view', $province->country->id]) : '' ?></td>
                 <td><?= h($province->name) ?></td>
                 <td><?= h($province->created) ?></td>

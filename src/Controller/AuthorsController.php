@@ -38,7 +38,7 @@ class AuthorsController extends AppController
     public function view($id = null)
     {
         $author = $this->Authors->get($id, [
-            'contain' => ['Users', 'Books']
+            'contain' => ['Users', 'Books' => ['Provinces']]
         ]);
 
         $this->set('author', $author);
@@ -74,10 +74,10 @@ class AuthorsController extends AppController
      * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($slug)
+    public function edit($id)
     {
         $author = $this->Authors
-                ->findBySlug($slug)
+                ->findById($id)
                 ->firstOrFail();
         if ($this->request->is(['post', 'put'])) {
           $this->Authors->patchEntity($author, $this->request->getData(),[

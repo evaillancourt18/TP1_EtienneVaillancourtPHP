@@ -36,6 +36,8 @@ class BooksTable extends Table
     public function initialize(array $config)
     {
         parent::initialize($config);
+		
+		$this->addBehavior('Translate', ['fields' => ['title']]);
 
         $this->setTable('books');
         $this->setDisplayField('title');

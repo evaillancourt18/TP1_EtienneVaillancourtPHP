@@ -28,7 +28,7 @@
         </tr>
         <tr>
             <th scope="row"><?= __('Province') ?></th>
-            <td><?= $book->has('province') ? $this->Html->link($book->province->name, ['controller' => 'Provinces', 'action' => 'view', $book->province->id]) : '' ?></td>
+            <td><?= $book->has('province') ? $this->Html->link($book->province->name, ['controller' => 'Provinces', 'action' => 'view', $book->province->name]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Title') ?></th>
@@ -37,10 +37,6 @@
         <tr>
             <th scope="row"><?= __('Release Date') ?></th>
             <td><?= h($book->release_date) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($book->id) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>
@@ -56,7 +52,6 @@
         <?php if (!empty($book->categories)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <th scope="col"><?= __('Id') ?></th>
                 <th scope="col"><?= __('Name') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
@@ -64,7 +59,6 @@
             </tr>
             <?php foreach ($book->categories as $categories): ?>
             <tr>
-                <td><?= h($categories->id) ?></td>
                 <td><?= h($categories->name) ?></td>
                 <td><?= h($categories->created) ?></td>
                 <td><?= h($categories->modified) ?></td>

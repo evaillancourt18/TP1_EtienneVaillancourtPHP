@@ -1,6 +1,7 @@
 <?php
 namespace App\Model\Entity;
 
+use Cake\ORM\Behavior\Translate\TranslateTrait;
 use Cake\ORM\Entity;
 
 /**
@@ -21,6 +22,7 @@ use Cake\ORM\Entity;
 class Book extends Entity
 {
 
+use TranslateTrait;
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
      *
