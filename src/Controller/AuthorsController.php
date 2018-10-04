@@ -21,7 +21,7 @@ class AuthorsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Users', 'Files']
+            'contain' => ['Users']
         ];
         $authors = $this->paginate($this->Authors);
 
@@ -68,7 +68,7 @@ class AuthorsController extends AppController
         
 		}
         $users = $this->Authors->Users->find('list', ['limit' => 200]);
-        $files = $this->Authors->Files->find('list', ['limit' => 200]);
+		$files = $this->Authors->files->find('list', ['limit' => 200]);
         $this->set(compact('author', 'users', 'files'));
     }
 
@@ -82,7 +82,7 @@ class AuthorsController extends AppController
     public function edit($id = null)
     {
         $author = $this->Authors->get($id, [
-            'contain' => []
+            'contain' => ['files']
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $author = $this->Authors->patchEntity($author, $this->request->getData());
@@ -94,8 +94,8 @@ class AuthorsController extends AppController
             $this->Flash->error(__('The author could not be saved. Please, try again.'));
         }
         $users = $this->Authors->Users->find('list', ['limit' => 200]);
-        $files = $this->Authors->Files->find('list', ['limit' => 200]);
-        $this->set(compact('author', 'users', 'files'));
+		$files = $this->Authors->files->find('list', ['limit' => 200]);
+        $this->set(compact('author', 'users','files'));
     }
 
     /**

@@ -35,10 +35,6 @@
             <td><?= h($author->email) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('File') ?></th>
-            <td><?= $author->has('file') ? $this->Html->link($author->file->name, ['controller' => 'Files', 'action' => 'view', $author->file->id]) : '' ?></td>
-        </tr>
-        <tr>
             <th scope="row"><?= __('Created') ?></th>
             <td><?= h($author->created) ?></td>
         </tr>
@@ -47,6 +43,27 @@
             <td><?= h($author->modified) ?></td>
         </tr>
     </table>
+	    <div class="related">
+        <h4><?= __('Related Files') ?></h4>
+        <?php if (!empty($author->files)): ?>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th scope="col"><?= __('Image') ?></th>
+               </tr>
+                <?php foreach ($author->files as $files): ?>
+                    <tr>
+                        <td>
+                            <?php
+                            echo $this->Html->image($files->path . $files->name, [
+                                "alt" => $files->name,
+                            ]);
+                            ?>
+                        </td>
+                    </tr>
+            <?php endforeach; ?>
+            </table>
+		<?php endif; ?>
+    </div>    
     <div class="related">
         <h4><?= __('Related Books') ?></h4>
         <?php if (!empty($author->books)): ?>

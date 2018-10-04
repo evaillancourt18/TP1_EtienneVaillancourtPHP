@@ -34,7 +34,6 @@ class Author extends Entity
         'user_id' => true,
         'name' => true,
         'email' => true,
-        'files_id' => true,
         'created' => true,
         'modified' => true,
         'user' => true,

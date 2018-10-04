@@ -25,3 +25,25 @@ Stack Trace:
 #2 {main}
 
 
+2018-10-04 16:50:12 Error: [ParseError] syntax error, unexpected '}' in C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\src\Model\Table\FilesTable.php on line 45
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#3 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#4 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Fi...', 'App')
+#5 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(246): Cake\Core\App::className('Files', 'Model/Table', 'Table')
+#6 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(194): Cake\ORM\Locator\TableLocator->_getClassName('Files', Array)
+#7 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(195): Cake\ORM\Locator\TableLocator->get('Files', Array)
+#8 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(112): Bake\Shell\Task\ModelTask->getTableObject('Files', 'files')
+#9 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(100): Bake\Shell\Task\ModelTask->bake('Files')
+#10 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Files')
+#11 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Files', 0)
+#12 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#13 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('files')
+#14 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#15 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#16 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+

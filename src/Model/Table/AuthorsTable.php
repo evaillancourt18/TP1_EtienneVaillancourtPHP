@@ -47,9 +47,10 @@ class AuthorsTable extends Table
             'foreignKey' => 'user_id',
             'joinType' => 'INNER'
         ]);
-        $this->belongsTo('Files', [
-            'foreignKey' => 'files_id',
-            'joinType' => 'INNER'
+        $this->belongsToMany('Files', [
+            'foreignKey' => 'author_id',
+            'targetForeignKey' => 'file_id',
+            'joinTable' => 'authors_files'
         ]);
         $this->hasMany('Books', [
             'foreignKey' => 'author_id'
@@ -93,7 +94,6 @@ class AuthorsTable extends Table
     {
         $rules->add($rules->isUnique(['email']));
         $rules->add($rules->existsIn(['user_id'], 'Users'));
-        $rules->add($rules->existsIn(['files_id'], 'Files'));
 
         return $rules;
     }

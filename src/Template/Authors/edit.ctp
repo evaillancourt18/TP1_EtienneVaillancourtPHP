@@ -27,10 +27,10 @@
     <fieldset>
         <legend><?= __('Edit Author') ?></legend>
         <?php
-            echo $this->Form->control('user_id', ['options' => $users]);
+            //echo $this->Form->control('user_id', ['options' => $users]);
             echo $this->Form->control('name');
             echo $this->Form->control('email');
-            echo $this->Form->control('files_id', ['options' => $files]);
+			echo $this->Form->control('files._ids', ['options' => $files]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
