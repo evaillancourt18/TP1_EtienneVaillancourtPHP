@@ -3,17 +3,24 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Book[]|\Cake\Collection\CollectionInterface $books
  */
+  $loguser = $this->request->session()->read('Auth.User');
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
+		<?php
+		if($loguser['type']==2||$loguser['type']==1){
+		?>
         <li><?= $this->Html->link(__('New Book'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Authors'), ['controller' => 'Authors', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Author'), ['controller' => 'Authors', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Provinces'), ['controller' => 'Provinces', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Province'), ['controller' => 'Provinces', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Categories'), ['controller' => 'Categories', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Category'), ['controller' => 'Categories', 'action' => 'add']) ?></li>
+		<?php
+		}
+		?>
+		<li><?= $this->Html->link(__('List Authors'), ['controller' => 'Authors', 'action' => 'index']) ?></li>
     </ul>
 </nav>
 <div class="books index large-9 medium-8 columns content">
@@ -27,7 +34,13 @@
                 <th scope="col"><?= $this->Paginator->sort('release_date') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
+		<?php
+		if($loguser['type']==2||$loguser['type']==1){
+		?>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
+		<?php
+		}
+		?>
             </tr>
         </thead>
         <tbody>
@@ -39,11 +52,24 @@
                 <td><?= h($book->release_date) ?></td>
                 <td><?= h($book->created) ?></td>
                 <td><?= h($book->modified) ?></td>
+				<?php
+		if($loguser['type']==2||$loguser['type']==1){
+		?>
                 <td class="actions">
+		
                     <?= $this->Html->link(__('View'), ['action' => 'view', $book->id]) ?>
+					<?php
+		if($loguser['type']==2){
+		?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $book->id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $book->id], ['confirm' => __('Are you sure you want to delete # {0}?', $book->id)]) ?>
+					<?php
+		}
+		?>
                 </td>
+		<?php
+		}
+		?>
             </tr>
             <?php endforeach; ?>
         </tbody>

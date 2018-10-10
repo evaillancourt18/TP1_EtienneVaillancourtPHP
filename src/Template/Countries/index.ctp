@@ -3,6 +3,7 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Country[]|\Cake\Collection\CollectionInterface $countries
  */
+ $loguser = $this->request->session()->read('Auth.User');
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
@@ -31,8 +32,14 @@
                 <td><?= h($country->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $country->id]) ?>
+					<?php
+		if($loguser['type']==2){
+		?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $country->id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $country->id], ['confirm' => __('Are you sure you want to delete # {0}?', $country->id)]) ?>
+					<?php
+		}
+		?>
                 </td>
             </tr>
             <?php endforeach; ?>

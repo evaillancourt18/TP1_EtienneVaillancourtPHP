@@ -3,6 +3,7 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\BooksCategory[]|\Cake\Collection\CollectionInterface $booksCategories
  */
+ $loguser = $this->request->session()->read('Auth.User');
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
@@ -31,8 +32,14 @@
                 <td><?= $booksCategory->has('category') ? $this->Html->link($booksCategory->category->name, ['controller' => 'Categories', 'action' => 'view', $booksCategory->category->id]) : '' ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $booksCategory->book_id]) ?>
+					<?php
+				if($loguser['type']==2){
+				?>	
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $booksCategory->book_id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $booksCategory->book_id], ['confirm' => __('Are you sure you want to delete # {0}?', $booksCategory->book_id)]) ?>
+					<?php
+				}
+				?>	
                 </td>
             </tr>
             <?php endforeach; ?>

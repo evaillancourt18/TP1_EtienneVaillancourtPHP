@@ -13,6 +13,10 @@ use App\Controller\AppController;
 class AuthorsController extends AppController
 {
 
+		public function initialize() {
+				parent::initialize();
+				$this->Auth->allow(['logout','index']);
+			}
     /**
      * Index method
      *

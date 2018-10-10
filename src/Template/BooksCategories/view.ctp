@@ -3,12 +3,19 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\BooksCategory $booksCategory
  */
+ $loguser = $this->request->session()->read('Auth.User');
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
+		<?php
+				if($loguser['type']==2){
+				?>	
         <li><?= $this->Html->link(__('Edit Books Category'), ['action' => 'edit', $booksCategory->book_id]) ?> </li>
         <li><?= $this->Form->postLink(__('Delete Books Category'), ['action' => 'delete', $booksCategory->book_id], ['confirm' => __('Are you sure you want to delete # {0}?', $booksCategory->book_id)]) ?> </li>
+		<?php
+				}
+				?>	
         <li><?= $this->Html->link(__('List Books Categories'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Books Category'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Books'), ['controller' => 'Books', 'action' => 'index']) ?> </li>

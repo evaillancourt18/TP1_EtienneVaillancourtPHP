@@ -15,7 +15,7 @@ class UsersController extends AppController
 
     public function initialize() {
         parent::initialize();
-        $this->Auth->allow(['logout', 'add']);
+        $this->Auth->allow(['logout']);
     }
     /**
      * Index method
@@ -50,7 +50,7 @@ class UsersController extends AppController
             $user = $this->Auth->identify();
             if ($user) {
                 $this->Auth->setUser($user);
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['controller' => 'Books','action' =>  'index']);
             }
             $this->Flash->error('Your username or password is incorrect.');
         }
@@ -142,6 +142,27 @@ class UsersController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+	
+	 public function isAuthorized($user){
+		 
+		 $action = $this->request->getParam('action');
+
+			if(in_array($action,['add','edit','delete','view','index'])){
+       
+				if ($user['type']==2){
+                    return true;
+        }else{
+            return false;
+        }
+        
+		 
+			}
+	 }
+	 
+	 public function aPropos()
+    {
+
     }
 	
 }

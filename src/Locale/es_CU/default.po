@@ -1,0 +1,649 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-09-28 14:37+0000\n"
+"PO-Revision-Date: 2018-09-28 10:41-0400\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.1.1\n"
+"Last-Translator: \n"
+"Language: es_CU\n"
+
+#: Controller/AuthorsController.php:58;84
+msgid "The author has been saved."
+msgstr "El autor ha sido salvado."
+
+#: Controller/AuthorsController.php:62;88
+msgid "The author could not be saved. Please, try again."
+msgstr "El autor no pudo ser salvado. Inténtalo de nuevo."
+
+#: Controller/AuthorsController.php:107
+msgid "The author has been deleted."
+msgstr "El autor ha sido eliminado."
+
+#: Controller/AuthorsController.php:109
+msgid "The author could not be deleted. Please, try again."
+msgstr "El autor no pudo ser eliminado. Inténtalo de nuevo."
+
+#: Controller/BooksCategoriesController.php:58;84
+msgid "The books category has been saved."
+msgstr "La categoría de libros ha sido guardada."
+
+#: Controller/BooksCategoriesController.php:62;88
+msgid "The books category could not be saved. Please, try again."
+msgstr "La categoría de libros no se pudo guardar. Inténtalo de nuevo."
+
+#: Controller/BooksCategoriesController.php:107
+msgid "The books category has been deleted."
+msgstr "La categoría de libros ha sido eliminada."
+
+#: Controller/BooksCategoriesController.php:109
+msgid "The books category could not be deleted. Please, try again."
+msgstr "La categoría de libros no pudo ser eliminada. Inténtalo de nuevo."
+
+#: Controller/BooksController.php:58;85
+msgid "The book has been saved."
+msgstr "El libro ha sido guardado."
+
+#: Controller/BooksController.php:62;89
+msgid "The book could not be saved. Please, try again."
+msgstr "El libro no pudo ser salvado. Inténtalo de nuevo."
+
+#: Controller/BooksController.php:109
+msgid "The book has been deleted."
+msgstr "El libro ha sido eliminado."
+
+#: Controller/BooksController.php:111
+msgid "The book could not be deleted. Please, try again."
+msgstr "El libro no pudo ser eliminado. Inténtalo de nuevo."
+
+#: Controller/CategoriesController.php:55;80
+msgid "The category has been saved."
+msgstr "La categoría ha sido guardada."
+
+#: Controller/CategoriesController.php:59;84
+msgid "The category could not be saved. Please, try again."
+msgstr "La categoría no se pudo guardar. Inténtalo de nuevo."
+
+#: Controller/CategoriesController.php:102
+msgid "The category has been deleted."
+msgstr "La categoría ha sido eliminada."
+
+#: Controller/CategoriesController.php:104
+msgid "The category could not be deleted. Please, try again."
+msgstr "La categoría no pudo ser eliminada. Inténtalo de nuevo."
+
+#: Controller/CountriesController.php:55;79
+msgid "The country has been saved."
+msgstr "El país se ha salvado."
+
+#: Controller/CountriesController.php:59;83
+msgid "The country could not be saved. Please, try again."
+msgstr "El país no pudo ser salvado. Inténtalo de nuevo."
+
+#: Controller/CountriesController.php:100
+msgid "The country has been deleted."
+msgstr "El país ha sido eliminado."
+
+#: Controller/CountriesController.php:102
+msgid "The country could not be deleted. Please, try again."
+msgstr "El país no pudo ser eliminado. Inténtalo de nuevo."
+
+#: Controller/FilesController.php:55;79
+msgid "The file has been saved."
+msgstr "El archivo ha sido guardado."
+
+#: Controller/FilesController.php:59;83
+msgid "The file could not be saved. Please, try again."
+msgstr "El archivo no se pudo guardar. Inténtalo de nuevo."
+
+#: Controller/FilesController.php:100
+msgid "The file has been deleted."
+msgstr "El archivo ha sido eliminado."
+
+#: Controller/FilesController.php:102
+msgid "The file could not be deleted. Please, try again."
+msgstr "No se pudo eliminar el archivo. Inténtalo de nuevo."
+
+#: Controller/ProvincesController.php:58;83
+msgid "The province has been saved."
+msgstr "La provincia ha sido salvada."
+
+#: Controller/ProvincesController.php:62;87
+msgid "The province could not be saved. Please, try again."
+msgstr "La provincia no pudo ser salvada. Inténtalo de nuevo."
+
+#: Controller/ProvincesController.php:105
+msgid "The province has been deleted."
+msgstr "La provincia ha sido eliminada."
+
+#: Controller/ProvincesController.php:107
+msgid "The province could not be deleted. Please, try again."
+msgstr "La provincia no pudo ser eliminada. Inténtalo de nuevo."
+
+#: Controller/UsersController.php:76;91;115
+msgid "The user has been saved."
+msgstr "El usuario ha sido guardado."
+
+#: Controller/UsersController.php:80;95;119
+msgid "The user could not be saved. Please, try again."
+msgstr "El usuario no pudo ser guardado. Inténtalo de nuevo."
+
+#: Controller/UsersController.php:139
+msgid "The user has been deleted."
+msgstr "El usuario ha sido eliminado."
+
+#: Controller/UsersController.php:141
+msgid "The user could not be deleted. Please, try again."
+msgstr "El usuario no pudo ser eliminado. Inténtalo de nuevo."
+
+#: Template/Authors/add.ctp:9 Template/Authors/edit.ctp:9
+#: Template/Authors/index.ctp:9;31 Template/Authors/view.ctp:9;66
+#: Template/Books/add.ctp:9 Template/Books/edit.ctp:9
+#: Template/Books/index.ctp:9;30 Template/Books/view.ctp:9;58
+#: Template/BooksCategories/add.ctp:9 Template/BooksCategories/edit.ctp:9
+#: Template/BooksCategories/index.ctp:9;24 Template/BooksCategories/view.ctp:9
+#: Template/Categories/add.ctp:9 Template/Categories/edit.ctp:9
+#: Template/Categories/index.ctp:9;23 Template/Categories/view.ctp:9;43
+#: Template/Countries/add.ctp:9 Template/Countries/edit.ctp:9
+#: Template/Countries/index.ctp:9;23 Template/Countries/view.ctp:9;42
+#: Template/Files/add.ctp:9 Template/Files/edit.ctp:9
+#: Template/Files/index.ctp:9;24 Template/Files/view.ctp:9
+#: Template/Provinces/add.ctp:9 Template/Provinces/edit.ctp:9
+#: Template/Provinces/index.ctp:9;26 Template/Provinces/view.ctp:9;49
+#: Template/Users/add.ctp:9 Template/Users/add_visitor.ctp:9
+#: Template/Users/edit.ctp:9 Template/Users/index.ctp:9;24
+#: Template/Users/view.ctp:9;48
+msgid "Actions"
+msgstr "Comportamiento"
+
+#: Template/Authors/add.ctp:10 Template/Authors/edit.ctp:16
+#: Template/Authors/view.ctp:12 Template/Books/add.ctp:11
+#: Template/Books/edit.ctp:17 Template/Books/index.ctp:11
+#: Template/Books/view.ctp:14 Template/Users/add.ctp:11
+#: Template/Users/add_visitor.ctp:11 Template/Users/edit.ctp:17
+#: Template/Users/index.ctp:11 Template/Users/view.ctp:14
+msgid "List Authors"
+msgstr "Lista de autores"
+
+#: Template/Authors/add.ctp:11 Template/Authors/edit.ctp:17
+#: Template/Authors/index.ctp:11 Template/Authors/view.ctp:14
+#: Template/Users/add.ctp:10 Template/Users/add_visitor.ctp:10
+#: Template/Users/edit.ctp:16 Template/Users/view.ctp:12
+msgid "List Users"
+msgstr "Lista de Usuarios"
+
+#: Template/Authors/add.ctp:12 Template/Authors/edit.ctp:18
+#: Template/Authors/index.ctp:12 Template/Authors/view.ctp:15
+#: Template/Users/index.ctp:10 Template/Users/login.ctp:7
+#: Template/Users/view.ctp:13
+msgid "New User"
+msgstr "Nuevo usuario"
+
+#: Template/Authors/add.ctp:13 Template/Authors/edit.ctp:19
+#: Template/Authors/index.ctp:13 Template/Authors/view.ctp:16
+#: Template/Files/add.ctp:10 Template/Files/edit.ctp:16
+#: Template/Files/view.ctp:12
+msgid "List Files"
+msgstr "Lista de archivos"
+
+#: Template/Authors/add.ctp:14 Template/Authors/edit.ctp:20
+#: Template/Authors/index.ctp:14 Template/Authors/view.ctp:17
+#: Template/Files/index.ctp:10 Template/Files/view.ctp:13
+msgid "New File"
+msgstr "Archivo nuevo"
+
+#: Template/Authors/add.ctp:15 Template/Authors/edit.ctp:21
+#: Template/Authors/index.ctp:15 Template/Authors/view.ctp:18
+#: Template/Books/add.ctp:10 Template/Books/edit.ctp:16
+#: Template/Books/view.ctp:12 Template/BooksCategories/add.ctp:11
+#: Template/BooksCategories/edit.ctp:17 Template/BooksCategories/index.ctp:11
+#: Template/BooksCategories/view.ctp:14 Template/Categories/add.ctp:11
+#: Template/Categories/edit.ctp:17 Template/Categories/index.ctp:11
+#: Template/Categories/view.ctp:14 Template/Provinces/add.ctp:13
+#: Template/Provinces/edit.ctp:19 Template/Provinces/index.ctp:13
+#: Template/Provinces/view.ctp:16
+msgid "List Books"
+msgstr "Lista de libros"
+
+#: Template/Authors/add.ctp:16 Template/Authors/edit.ctp:22
+#: Template/Authors/index.ctp:16 Template/Authors/view.ctp:19
+#: Template/Books/index.ctp:10 Template/Books/view.ctp:13
+#: Template/BooksCategories/add.ctp:12 Template/BooksCategories/edit.ctp:18
+#: Template/BooksCategories/index.ctp:12 Template/BooksCategories/view.ctp:15
+#: Template/Categories/add.ctp:12 Template/Categories/edit.ctp:18
+#: Template/Categories/index.ctp:12 Template/Categories/view.ctp:15
+#: Template/Provinces/add.ctp:14 Template/Provinces/edit.ctp:20
+#: Template/Provinces/index.ctp:14 Template/Provinces/view.ctp:17
+msgid "New Book"
+msgstr "Nuevo libro"
+
+#: Template/Authors/add.ctp:22
+msgid "Add Author"
+msgstr "Añadir autor"
+
+#: Template/Authors/add.ctp:30 Template/Authors/edit.ctp:36
+#: Template/Books/add.ctp:31 Template/Books/edit.ctp:37
+#: Template/BooksCategories/add.ctp:25 Template/BooksCategories/edit.ctp:31
+#: Template/Categories/add.ctp:24 Template/Categories/edit.ctp:30
+#: Template/Countries/add.ctp:23 Template/Countries/edit.ctp:29
+#: Template/Files/add.ctp:23 Template/Files/edit.ctp:29
+#: Template/Provinces/add.ctp:26 Template/Provinces/edit.ctp:32
+#: Template/Users/add.ctp:26 Template/Users/add_visitor.ctp:25
+#: Template/Users/edit.ctp:31
+msgid "Submit"
+msgstr "Enviar"
+
+#: Template/Authors/edit.ctp:11 Template/Authors/index.ctp:47
+#: Template/Authors/view.ctp:80 Template/Books/edit.ctp:11
+#: Template/Books/index.ctp:45 Template/Books/view.ctp:68
+#: Template/BooksCategories/edit.ctp:11 Template/BooksCategories/index.ctp:35
+#: Template/Categories/edit.ctp:11 Template/Categories/index.ctp:35
+#: Template/Categories/view.ctp:54 Template/Countries/edit.ctp:11
+#: Template/Countries/index.ctp:35 Template/Countries/view.ctp:52
+#: Template/Files/edit.ctp:11 Template/Files/index.ctp:39
+#: Template/Provinces/edit.ctp:11 Template/Provinces/index.ctp:39
+#: Template/Provinces/view.ctp:60 Template/Users/edit.ctp:11
+#: Template/Users/index.ctp:37 Template/Users/view.ctp:60
+msgid "Delete"
+msgstr "Borrar"
+
+#: Template/Authors/edit.ctp:13 Template/Authors/index.ctp:47
+#: Template/Authors/view.ctp:11;80 Template/Books/edit.ctp:13
+#: Template/Books/index.ctp:45 Template/Books/view.ctp:11;68
+#: Template/BooksCategories/edit.ctp:13 Template/BooksCategories/index.ctp:35
+#: Template/BooksCategories/view.ctp:11 Template/Categories/edit.ctp:13
+#: Template/Categories/index.ctp:35 Template/Categories/view.ctp:11;54
+#: Template/Countries/edit.ctp:13 Template/Countries/index.ctp:35
+#: Template/Countries/view.ctp:11;52 Template/Files/edit.ctp:13
+#: Template/Files/index.ctp:39 Template/Files/view.ctp:11
+#: Template/Provinces/edit.ctp:13 Template/Provinces/index.ctp:39
+#: Template/Provinces/view.ctp:11;60 Template/Users/edit.ctp:13
+#: Template/Users/index.ctp:37 Template/Users/view.ctp:11;60
+msgid "Are you sure you want to delete # {0}?"
+msgstr "¿Estás seguro de que quieres eliminar # {0} ?"
+
+#: Template/Authors/edit.ctp:28 Template/Authors/view.ctp:10
+msgid "Edit Author"
+msgstr "Editar autor"
+
+#: Template/Authors/index.ctp:10 Template/Authors/view.ctp:13
+#: Template/Books/add.ctp:12 Template/Books/edit.ctp:18
+#: Template/Books/index.ctp:12 Template/Books/view.ctp:15
+#: Template/Users/add.ctp:12 Template/Users/add_visitor.ctp:12
+#: Template/Users/edit.ctp:18 Template/Users/index.ctp:12
+#: Template/Users/view.ctp:15
+msgid "New Author"
+msgstr "Nuevo autor"
+
+#: Template/Authors/index.ctp:20
+msgid "Authors"
+msgstr "Autores"
+
+#: Template/Authors/index.ctp:45 Template/Authors/view.ctp:78
+#: Template/Books/index.ctp:43 Template/Books/view.ctp:66
+#: Template/BooksCategories/index.ctp:33 Template/Categories/index.ctp:33
+#: Template/Categories/view.ctp:52 Template/Countries/index.ctp:33
+#: Template/Countries/view.ctp:50 Template/Files/index.ctp:37
+#: Template/Provinces/index.ctp:37 Template/Provinces/view.ctp:58
+#: Template/Users/index.ctp:35 Template/Users/view.ctp:58
+msgid "View"
+msgstr "Ver"
+
+#: Template/Authors/index.ctp:46 Template/Authors/view.ctp:79
+#: Template/Books/index.ctp:44 Template/Books/view.ctp:67
+#: Template/BooksCategories/index.ctp:34 Template/Categories/index.ctp:34
+#: Template/Categories/view.ctp:53 Template/Countries/index.ctp:34
+#: Template/Countries/view.ctp:51 Template/Files/index.ctp:38
+#: Template/Provinces/index.ctp:38 Template/Provinces/view.ctp:59
+#: Template/Users/index.ctp:36 Template/Users/view.ctp:59
+msgid "Edit"
+msgstr "Editar"
+
+#: Template/Authors/index.ctp:55 Template/Books/index.ctp:53
+#: Template/BooksCategories/index.ctp:43 Template/Categories/index.ctp:43
+#: Template/Countries/index.ctp:43 Template/Files/index.ctp:47
+#: Template/Provinces/index.ctp:47 Template/Users/index.ctp:45
+msgid "first"
+msgstr "primero"
+
+#: Template/Authors/index.ctp:56 Template/Books/index.ctp:54
+#: Template/BooksCategories/index.ctp:44 Template/Categories/index.ctp:44
+#: Template/Countries/index.ctp:44 Template/Files/index.ctp:48
+#: Template/Provinces/index.ctp:48 Template/Users/index.ctp:46
+msgid "previous"
+msgstr "anterior"
+
+#: Template/Authors/index.ctp:58 Template/Books/index.ctp:56
+#: Template/BooksCategories/index.ctp:46 Template/Categories/index.ctp:46
+#: Template/Countries/index.ctp:46 Template/Files/index.ctp:50
+#: Template/Provinces/index.ctp:50 Template/Users/index.ctp:48
+msgid "next"
+msgstr "siguiente"
+
+#: Template/Authors/index.ctp:59 Template/Books/index.ctp:57
+#: Template/BooksCategories/index.ctp:47 Template/Categories/index.ctp:47
+#: Template/Countries/index.ctp:47 Template/Files/index.ctp:51
+#: Template/Provinces/index.ctp:51 Template/Users/index.ctp:49
+msgid "last"
+msgstr "último"
+
+#: Template/Authors/index.ctp:61 Template/Books/index.ctp:59
+#: Template/BooksCategories/index.ctp:49 Template/Categories/index.ctp:49
+#: Template/Countries/index.ctp:49 Template/Files/index.ctp:53
+#: Template/Provinces/index.ctp:53 Template/Users/index.ctp:51
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr "La página {{página}} de {{páginas}}, mostrando {{actual}} registros de {{conteo}} total"
+
+#: Template/Authors/view.ctp:11
+msgid "Delete Author"
+msgstr "Eliminar autor"
+
+#: Template/Authors/view.ctp:26
+msgid "User"
+msgstr "Usuario"
+
+#: Template/Authors/view.ctp:30 Template/Books/view.ctp:55
+#: Template/Categories/view.ctp:22 Template/Countries/view.ctp:22;39
+#: Template/Files/view.ctp:20 Template/Provinces/view.ctp:28
+#: Template/Users/view.ctp:43
+msgid "Name"
+msgstr "Nombre"
+
+#: Template/Authors/view.ctp:34 Template/Users/view.ctp:22;44
+msgid "Email"
+msgstr "Email"
+
+#: Template/Authors/view.ctp:38
+msgid "File"
+msgstr "Archivo"
+
+#: Template/Authors/view.ctp:42;59 Template/Files/view.ctp:28
+msgid "Id"
+msgstr "Carné de identidad"
+
+#: Template/Authors/view.ctp:46;64 Template/Books/view.ctp:42;56
+#: Template/Categories/view.ctp:26;41 Template/Countries/view.ctp:26;40
+#: Template/Files/view.ctp:32 Template/Provinces/view.ctp:32;47
+#: Template/Users/view.ctp:30;46
+msgid "Created"
+msgstr "Creado"
+
+#: Template/Authors/view.ctp:50;65 Template/Books/view.ctp:46;57
+#: Template/Categories/view.ctp:30;42 Template/Countries/view.ctp:30;41
+#: Template/Files/view.ctp:36 Template/Provinces/view.ctp:36;48
+#: Template/Users/view.ctp:34;47
+msgid "Modified"
+msgstr "Modificado"
+
+#: Template/Authors/view.ctp:55 Template/Categories/view.ctp:35
+#: Template/Provinces/view.ctp:41
+msgid "Related Books"
+msgstr "Libros relacionados"
+
+#: Template/Authors/view.ctp:60
+msgid "Author Id"
+msgstr "Identificación del autor"
+
+#: Template/Authors/view.ctp:61
+msgid "Province Id"
+msgstr "ID de la provincia"
+
+#: Template/Authors/view.ctp:62 Template/Books/view.ctp:34
+#: Template/Categories/view.ctp:39 Template/Provinces/view.ctp:45
+msgid "Title"
+msgstr "Título"
+
+#: Template/Authors/view.ctp:63 Template/Books/view.ctp:38
+#: Template/Categories/view.ctp:40 Template/Provinces/view.ctp:46
+msgid "Release Date"
+msgstr "Fecha de lanzamiento"
+
+#: Template/Books/add.ctp:13 Template/Books/edit.ctp:19
+#: Template/Books/index.ctp:13 Template/Books/view.ctp:16
+#: Template/Countries/add.ctp:11 Template/Countries/edit.ctp:17
+#: Template/Countries/index.ctp:11 Template/Countries/view.ctp:14
+#: Template/Provinces/add.ctp:10 Template/Provinces/edit.ctp:16
+#: Template/Provinces/view.ctp:12
+msgid "List Provinces"
+msgstr "Lista de provincias"
+
+#: Template/Books/add.ctp:14 Template/Books/edit.ctp:20
+#: Template/Books/index.ctp:14 Template/Books/view.ctp:17
+#: Template/Countries/add.ctp:12 Template/Countries/edit.ctp:18
+#: Template/Countries/index.ctp:12 Template/Countries/view.ctp:15
+#: Template/Provinces/index.ctp:10 Template/Provinces/view.ctp:13
+msgid "New Province"
+msgstr "Nueva provincia"
+
+#: Template/Books/add.ctp:15 Template/Books/edit.ctp:21
+#: Template/Books/index.ctp:15 Template/Books/view.ctp:18
+#: Template/BooksCategories/add.ctp:13 Template/BooksCategories/edit.ctp:19
+#: Template/BooksCategories/index.ctp:13 Template/BooksCategories/view.ctp:16
+#: Template/Categories/add.ctp:10 Template/Categories/edit.ctp:16
+#: Template/Categories/view.ctp:12
+msgid "List Categories"
+msgstr "Lista de categorías"
+
+#: Template/Books/add.ctp:16 Template/Books/edit.ctp:22
+#: Template/Books/index.ctp:16 Template/Books/view.ctp:19
+#: Template/BooksCategories/add.ctp:14 Template/BooksCategories/edit.ctp:20
+#: Template/BooksCategories/index.ctp:14 Template/BooksCategories/view.ctp:17
+#: Template/Categories/index.ctp:10 Template/Categories/view.ctp:13
+msgid "New Category"
+msgstr "Nueva categoría"
+
+#: Template/Books/add.ctp:22
+msgid "Add Book"
+msgstr "Añadir libro"
+
+#: Template/Books/edit.ctp:28 Template/Books/view.ctp:10
+msgid "Edit Book"
+msgstr "Editar libro"
+
+#: Template/Books/index.ctp:20
+msgid "Books"
+msgstr "Libros"
+
+#: Template/Books/view.ctp:11
+msgid "Delete Book"
+msgstr "Eliminar libro"
+
+#: Template/Books/view.ctp:26
+msgid "Author"
+msgstr "Autor"
+
+#: Template/Books/view.ctp:30
+msgid "Province"
+msgstr "Provincia"
+
+#: Template/Books/view.ctp:51
+msgid "Related Categories"
+msgstr "Categorias relacionadas"
+
+#: Template/BooksCategories/add.ctp:10 Template/BooksCategories/edit.ctp:16
+#: Template/BooksCategories/view.ctp:12
+msgid "List Books Categories"
+msgstr "Listar categorías de libros"
+
+#: Template/BooksCategories/add.ctp:20
+msgid "Add Books Category"
+msgstr "Agregar categoría de libros"
+
+#: Template/BooksCategories/edit.ctp:26 Template/BooksCategories/view.ctp:10
+msgid "Edit Books Category"
+msgstr "Editar categoría de libros"
+
+#: Template/BooksCategories/index.ctp:10 Template/BooksCategories/view.ctp:13
+msgid "New Books Category"
+msgstr "Nueva categoría de libros"
+
+#: Template/BooksCategories/index.ctp:18
+msgid "Books Categories"
+msgstr "Categorias de libros"
+
+#: Template/BooksCategories/view.ctp:11
+msgid "Delete Books Category"
+msgstr "Eliminar categoría de libros"
+
+#: Template/BooksCategories/view.ctp:24
+msgid "Book"
+msgstr "Libro"
+
+#: Template/BooksCategories/view.ctp:28
+msgid "Category"
+msgstr "Categoría"
+
+#: Template/Categories/add.ctp:18
+msgid "Add Category"
+msgstr "añadir categoría"
+
+#: Template/Categories/edit.ctp:24 Template/Categories/view.ctp:10
+msgid "Edit Category"
+msgstr "Editar categoria"
+
+#: Template/Categories/index.ctp:16
+msgid "Categories"
+msgstr "Categorías"
+
+#: Template/Categories/view.ctp:11
+msgid "Delete Category"
+msgstr "Eliminar Categoría"
+
+#: Template/Countries/add.ctp:10 Template/Countries/edit.ctp:16
+#: Template/Countries/view.ctp:12 Template/Provinces/add.ctp:11
+#: Template/Provinces/edit.ctp:17 Template/Provinces/index.ctp:11
+#: Template/Provinces/view.ctp:14
+msgid "List Countries"
+msgstr "Lista de países"
+
+#: Template/Countries/add.ctp:18
+msgid "Add Country"
+msgstr "Añadir país"
+
+#: Template/Countries/edit.ctp:24 Template/Countries/view.ctp:10
+msgid "Edit Country"
+msgstr "Editar país"
+
+#: Template/Countries/index.ctp:10 Template/Countries/view.ctp:13
+#: Template/Provinces/add.ctp:12 Template/Provinces/edit.ctp:18
+#: Template/Provinces/index.ctp:12 Template/Provinces/view.ctp:15
+msgid "New Country"
+msgstr "Nuevo país"
+
+#: Template/Countries/index.ctp:16
+msgid "Countries"
+msgstr "Países"
+
+#: Template/Countries/view.ctp:11
+msgid "Delete Country"
+msgstr "Eliminar pais"
+
+#: Template/Countries/view.ctp:35
+msgid "Related Provinces"
+msgstr "Provincias relacionadas"
+
+#: Template/Files/add.ctp:16
+msgid "Add File"
+msgstr "Agregar archivo"
+
+#: Template/Files/edit.ctp:22 Template/Files/view.ctp:10
+msgid "Edit File"
+msgstr "Editar archivo"
+
+#: Template/Files/index.ctp:14
+msgid "Files"
+msgstr "Archivos"
+
+#: Template/Files/view.ctp:11
+msgid "Delete File"
+msgstr "Borrar archivo"
+
+#: Template/Files/view.ctp:24
+msgid "Path"
+msgstr "Camino"
+
+#: Template/Files/view.ctp:40
+msgid "Status"
+msgstr "Estado"
+
+#: Template/Files/view.ctp:41
+msgid "Yes"
+msgstr "Sí"
+
+#: Template/Files/view.ctp:41
+msgid "No"
+msgstr "No"
+
+#: Template/Layout/default.ctp:53
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: Template/Layout/default.ctp:58
+msgid "Sign in"
+msgstr "Registrarse"
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr "Error"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "Espalda"
+
+#: Template/Provinces/add.ctp:20
+msgid "Add Province"
+msgstr "Añadir provincia"
+
+#: Template/Provinces/edit.ctp:26 Template/Provinces/view.ctp:10
+msgid "Edit Province"
+msgstr "Editar provincia"
+
+#: Template/Provinces/index.ctp:18
+msgid "Provinces"
+msgstr "Provincias"
+
+#: Template/Provinces/view.ctp:11
+msgid "Delete Province"
+msgstr "Eliminar provincia"
+
+#: Template/Provinces/view.ctp:24
+msgid "Country"
+msgstr "País"
+
+#: Template/Users/add.ctp:18 Template/Users/add_visitor.ctp:18
+msgid "Add User"
+msgstr "Agregar usuario"
+
+#: Template/Users/edit.ctp:24 Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr "editar usuario"
+
+#: Template/Users/index.ctp:16
+msgid "Users"
+msgstr "Usuarios"
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr "Borrar usuario"
+
+#: Template/Users/view.ctp:26
+msgid "Type"
+msgstr "Tipo"
+
+#: Template/Users/view.ctp:39
+msgid "Related Authors"
+msgstr "Autores relacionados"
+
+#: Template/Users/view.ctp:45
+msgid "Image"
+msgstr "Imagen"
+

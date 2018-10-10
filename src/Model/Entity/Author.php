@@ -37,7 +37,7 @@ class Author extends Entity
         'created' => true,
         'modified' => true,
         'user' => true,
-        'file' => true,
+        'files' => true,
         'books' => true
     ];
 }

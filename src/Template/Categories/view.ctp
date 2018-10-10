@@ -3,12 +3,19 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Category $category
  */
+ $loguser = $this->request->session()->read('Auth.User');
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
+		<?php
+				if($loguser['type']==2){
+				?>	
         <li><?= $this->Html->link(__('Edit Category'), ['action' => 'edit', $category->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Delete Category'), ['action' => 'delete', $category->id], ['confirm' => __('Are you sure you want to delete # {0}?', $category->id)]) ?> </li>
+		<?php
+				}
+				?>	
         <li><?= $this->Html->link(__('List Categories'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Category'), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List Books'), ['controller' => 'Books', 'action' => 'index']) ?> </li>
@@ -50,8 +57,14 @@
                 <td><?= h($books->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['controller' => 'Books', 'action' => 'view', $books->id]) ?>
+					<?php
+				if($loguser['type']==2){
+				?>	
                     <?= $this->Html->link(__('Edit'), ['controller' => 'Books', 'action' => 'edit', $books->id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['controller' => 'Books', 'action' => 'delete', $books->id], ['confirm' => __('Are you sure you want to delete # {0}?', $books->id)]) ?>
+					<?php
+				}
+				?>	
                 </td>
             </tr>
             <?php endforeach; ?>
