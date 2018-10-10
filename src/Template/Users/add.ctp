@@ -19,8 +19,7 @@
         <?php
             echo $this->Form->control('email');
             echo $this->Form->control('password');
-            echo $this->Form->label('type');
-            echo $this->Form->select('type',[0,1,2]);
+            echo $this->Form->hidden('type' , ['value' => '5']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

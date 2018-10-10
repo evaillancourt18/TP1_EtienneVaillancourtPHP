@@ -19,7 +19,7 @@
         <?php
             echo $this->Form->control('email');
             echo $this->Form->control('password');
-            echo $this->Form->hidden('type' , ['value' => '0']);
+            echo $this->Form->hidden('type' , ['value' => '5']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

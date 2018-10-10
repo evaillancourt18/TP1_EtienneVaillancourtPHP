@@ -62,6 +62,8 @@
                         <td>
                             <?php
                             echo $this->Html->image($files->path . $files->name, [
+								"width" => "220px",
+								"height" => "150px",
                                 "alt" => $files->name,
                             ]);
                             ?>
