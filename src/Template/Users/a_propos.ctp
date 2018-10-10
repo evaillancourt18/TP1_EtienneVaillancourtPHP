@@ -25,7 +25,7 @@
 	<p>Même autorisation qu'un utilisateur régulier mais en plus vous pouvez modifier et supprimer n'importe quel enregistrement en plus de pouvoir gérer les utilisateurs et les fichiers</p>
 	
 <h3>Diagramme BD</h3>
-<?php echo $this->Html->image('bd.png', ['alt' => 'CakePHP']); ?>
+<?php echo $this->Html->image('bd.png', ['alt' => 'Base de données']); ?>
 
 </div>
 </body>
