@@ -12,6 +12,21 @@ use App\Controller\AppController;
  */
 class ProvincesController extends AppController
 {
+	
+	 public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['getByCountry']);
+    }
+	
+    public function getByCountry() {
+        $country_id = $this->request->query('country_id');
+
+        $provinces = $this->Provinces->find('all', [
+            'conditions' => ['provinces.country_id' => $country_id],
+        ]);
+        $this->set('provinces', $provinces);
+        $this->set('_serialize', ['provinces']);
+    }	
 
     /**
      * Index method

@@ -3,6 +3,13 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Book $book
  */
+ $urlToLinkedListFilter = $this->Url->build([
+    "controller" => "provinces",
+    "action" => "getByCountry",
+    "_ext" => "json"
+        ]);
+ echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
+ echo $this->Html->script('Books/add', ['block' => 'scriptBottom']);
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
@@ -22,6 +29,7 @@
         <legend><?= __('Add Book') ?></legend>
         <?php
             echo $this->Form->control('author_id', ['options' => $authors]);
+			echo $this->Form->control('country_id', ['options' => $countries]);
             echo $this->Form->control('province_id', ['options' => $provinces]);
             echo $this->Form->control('title');
             echo $this->Form->control('release_date');
