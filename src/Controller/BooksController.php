@@ -15,7 +15,7 @@ class BooksController extends AppController
 	
 			public function initialize() {
 				parent::initialize();
-				$this->Auth->allow(['logout']);
+				$this->Auth->allow(['logout','autocomplete', 'findEditors']);
 			}
 
     /**
@@ -58,7 +58,12 @@ class BooksController extends AppController
     {
         $book = $this->Books->newEntity();
         if ($this->request->is('post')) {
+			
+			
             $book = $this->Books->patchEntity($book, $this->request->getData());
+			$editor = $this->Books->Editors->findByName($this->request->getData('editor_id'))->first();
+			$book->editor_id=$editor['id'];
+			
             if ($this->Books->save($book)) {
                 $this->Flash->success(__('The book has been saved.'));
 
@@ -77,7 +82,8 @@ class BooksController extends AppController
         ]);
         $authors = $this->Books->Authors->find('list', ['limit' => 200]);
         $categories = $this->Books->Categories->find('list', ['limit' => 200]);
-        $this->set(compact('book', 'authors', 'provinces', 'categories', 'countries'));
+		$editors = $this->Books->Editors->find('list', ['limit' => 200]);
+        $this->set(compact('book', 'authors', 'provinces', 'categories', 'countries','editors'));
     }
 
     /**
@@ -132,5 +138,25 @@ class BooksController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+	
+	public function findEditors() {
+        if ($this->request->is('ajax')) {
+            $this->autoRender = false;
+            $name = $this->request->query['term'];
+            $results = $this->Books->Editors->find('all', array(
+                'conditions' => array('Editors.name LIKE ' => '%' . $name . '%')
+            ));
+            
+            $resultArr = array();
+            foreach ($results as $result) {
+                $resultArr[] = array('label' => $result['name'], 'value' => $result['name']);
+            }
+            echo json_encode($resultArr);
+        }
+    }
+	
+	public function autocomplete() {
+        
     }
 }

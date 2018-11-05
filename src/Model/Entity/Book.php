@@ -41,6 +41,7 @@ use TranslateTrait;
         'modified' => true,
         'author' => true,
         'province' => true,
-        'categories' => true
+        'categories' => true,
+		'editor_id' => true
     ];
 }

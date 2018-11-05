@@ -53,6 +53,10 @@ class BooksTable extends Table
             'foreignKey' => 'province_id',
             'joinType' => 'INNER'
         ]);
+		$this->belongsTo('Editors', [
+            'foreignKey' => 'editor_id',
+            'joinType' => 'INNER'
+        ]);
         $this->belongsToMany('Categories', [
             'foreignKey' => 'book_id',
             'targetForeignKey' => 'category_id',

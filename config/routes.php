@@ -24,6 +24,7 @@ use Cake\Routing\Router;
 use Cake\Routing\Route\DashedRoute;
 
 Router::extensions(['json', 'xml']);
+Router::prefix('Admin', function ($routes) { $routes->fallbacks('InflectedRoute'); });
 
 /**
  * The default class to use for all routes
