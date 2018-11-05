@@ -38,7 +38,9 @@ class EditorsTable extends Table
         $this->setPrimaryKey('id');
 
         $this->hasMany('Books', [
-            'foreignKey' => 'editor_id'
+            'foreignKey' => 'editor_id',
+			'dependent' => true,
+    'cascadeCallbacks' => true
         ]);
     }
 
