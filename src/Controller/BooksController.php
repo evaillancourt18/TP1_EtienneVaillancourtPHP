@@ -61,7 +61,17 @@ class BooksController extends AppController
 			
 			
             $book = $this->Books->patchEntity($book, $this->request->getData());
+			
+			$editorName = $this->request->getData('editor_id');
 			$editor = $this->Books->Editors->findByName($this->request->getData('editor_id'))->first();
+			
+			if($editor == null){
+				$newEditor = $this->Books->Editors->newEntity();
+				$newEditor = $this->Books->Editors->patchEntity($newEditor, $this->request->getData());
+				$newEditor->name = $editorName;
+				$this->Books->Editors->save($newEditor);
+				$editor = $newEditor;
+			}
 			$book->editor_id=$editor['id'];
 			
             if ($this->Books->save($book)) {
