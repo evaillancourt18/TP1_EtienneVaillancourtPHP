@@ -26,7 +26,7 @@ class BooksController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Authors', 'Provinces']
+            'contain' => ['Authors', 'Provinces', 'Editors']
         ];
         $books = $this->paginate($this->Books);
 
@@ -106,10 +106,23 @@ class BooksController extends AppController
     public function edit($id = null)
     {
         $book = $this->Books->get($id, [
-            'contain' => ['Categories']
+            'contain' => ['Categories','Provinces','Editors']
         ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
+		$book['editor_id'] = $book->editor['name']; 
+		
+		if ($this->request->is(['patch', 'post', 'put'])) {
             $book = $this->Books->patchEntity($book, $this->request->getData());
+			$editorName = $this->request->getData('editor_id');
+			$editor = $this->Books->Editors->findByName($this->request->getData('editor_id'))->first();
+			
+			if($editor == null){
+				$newEditor = $this->Books->Editors->newEntity();
+				$newEditor = $this->Books->Editors->patchEntity($newEditor, $this->request->getData());
+				$newEditor->name = $editorName;
+				$this->Books->Editors->save($newEditor);
+				$editor = $newEditor;
+			}
+			$book->editor_id=$editor['id'];
             if ($this->Books->save($book)) {
                 $this->Flash->success(__('The book has been saved.'));
 
@@ -117,17 +130,20 @@ class BooksController extends AppController
             }
             $this->Flash->error(__('The book could not be saved. Please, try again.'));
         }
+		
+		
 		$this->loadModel('Countries');
 		$countries = $this->Countries->find('list', ['limit' => 200]);
 		$countries = $countries->toArray();
         reset($countries);
-        $country_id = key($countries);
+        $country_id = $book->province['country_id'];
 		$provinces = $this->Books->provinces->find('list', [
             'conditions' => ['Provinces.country_id' => $country_id],
         ]);
         $authors = $this->Books->Authors->find('list', ['limit' => 200]);
         $categories = $this->Books->Categories->find('list', ['limit' => 200]);
-        $this->set(compact('book', 'authors', 'provinces', 'categories', 'countries'));
+		$editors = $this->Books->Editors->find('list', ['limit' => 200]);
+        $this->set(compact('book', 'authors', 'provinces', 'categories', 'countries','editors','country_id'));
     }
 
     /**

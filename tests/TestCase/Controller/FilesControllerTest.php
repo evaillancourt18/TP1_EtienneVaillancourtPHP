@@ -16,7 +16,8 @@ class FilesControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.files'
+        'app.files',
+        'app.auteurs'
     ];
 
     /**

@@ -16,7 +16,8 @@ class EditorsControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.editors'
+        'app.editors',
+        'app.books'
     ];
 
     /**

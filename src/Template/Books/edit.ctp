@@ -10,6 +10,14 @@
         ]);
  echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
  echo $this->Html->script('Books/add', ['block' => 'scriptBottom']);
+ 
+ $urlToEditorsAutocompleteJson = $this->Url->build([
+    "controller" => "books",
+    "action" => "findEditors",
+    "_ext" => "json"
+        ]);
+echo $this->Html->scriptBlock('var urlToAutocompleteAction = "' . $urlToEditorsAutocompleteJson . '";', ['block' => true]);
+echo $this->Html->script('Books/autocomplete', ['block' => 'scriptBottom']);
 
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
@@ -36,9 +44,10 @@
         <legend><?= __('Edit Book') ?></legend>
         <?php
             echo $this->Form->control('author_id', ['options' => $authors]);
-			echo $this->Form->control('country_id', ['options' => $countries]);
+			echo $this->Form->control('country_id', ['options' => $countries, 'value' => $country_id]);
             echo $this->Form->control('province_id', ['options' => $provinces]);
             echo $this->Form->control('title');
+			echo $this->Form->control('editor_id', ['id' => 'autocomplete', 'type' => 'text']);
             echo $this->Form->control('release_date');
             echo $this->Form->control('categories._ids', ['options' => $categories]);
         ?>

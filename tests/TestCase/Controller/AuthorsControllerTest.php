@@ -23,6 +23,17 @@ class AuthorsControllerTest extends IntegrationTestCase
     ];
 
     /**
+     * Test initialize method
+     *
+     * @return void
+     */
+    public function testInitialize()
+    {
+	echo $this->_response->body();
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
      * Test index method
      *
      * @return void

@@ -16,7 +16,7 @@ class BooksCategoriesTableTest extends TestCase
      *
      * @var \App\Model\Table\BooksCategoriesTable
      */
-    public $BooksCategories;
+    public $BooksCategoriesTable;
 
     /**
      * Fixtures
@@ -38,7 +38,7 @@ class BooksCategoriesTableTest extends TestCase
     {
         parent::setUp();
         $config = TableRegistry::getTableLocator()->exists('BooksCategories') ? [] : ['className' => BooksCategoriesTable::class];
-        $this->BooksCategories = TableRegistry::getTableLocator()->get('BooksCategories', $config);
+        $this->BooksCategoriesTable = TableRegistry::getTableLocator()->get('BooksCategories', $config);
     }
 
     /**
@@ -48,7 +48,7 @@ class BooksCategoriesTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->BooksCategories);
+        unset($this->BooksCategoriesTable);
 
         parent::tearDown();
     }

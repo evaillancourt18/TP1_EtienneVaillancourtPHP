@@ -16,7 +16,7 @@ class CountriesTableTest extends TestCase
      *
      * @var \App\Model\Table\CountriesTable
      */
-    public $Countries;
+    public $CountriesTable;
 
     /**
      * Fixtures
@@ -37,7 +37,7 @@ class CountriesTableTest extends TestCase
     {
         parent::setUp();
         $config = TableRegistry::getTableLocator()->exists('Countries') ? [] : ['className' => CountriesTable::class];
-        $this->Countries = TableRegistry::getTableLocator()->get('Countries', $config);
+        $this->CountriesTable = TableRegistry::getTableLocator()->get('Countries', $config);
     }
 
     /**
@@ -47,7 +47,7 @@ class CountriesTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->Countries);
+        unset($this->CountriesTable);
 
         parent::tearDown();
     }

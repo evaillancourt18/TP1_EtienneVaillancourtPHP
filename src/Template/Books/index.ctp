@@ -40,7 +40,7 @@
                 <th scope="col"><?= $this->Paginator->sort('province_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('title') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('release_date') ?></th>
-				<th scope="col"><?= $this->Paginator->sort('editor') ?></th>
+				<th scope="col"><?= $this->Paginator->sort('editor_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
 		<?php
@@ -59,7 +59,7 @@
                 <td><?= $book->has('province') ? $this->Html->link($book->province->name, ['controller' => 'Provinces', 'action' => 'view', $book->province->id]) : '' ?></td>
                 <td><?= h($book->title) ?></td>
                 <td><?= h($book->release_date) ?></td>
-				<td><?= h($book->editor) ?></td>
+				<td><?= $book->has('editor') ? $this->Html->link($book->editor->name, ['controller' => 'Editors', 'action' => 'view', $book->editor->id]) : '' ?></td>
                 <td><?= h($book->created) ?></td>
                 <td><?= h($book->modified) ?></td>
 				<?php

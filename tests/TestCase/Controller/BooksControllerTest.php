@@ -17,11 +17,23 @@ class BooksControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.books',
+        'app.books_title_translation',
+        'app.i18n',
         'app.authors',
         'app.provinces',
-        'app.categories',
-        'app.books_categories'
+        'app.editors',
+        'app.categories'
     ];
+
+    /**
+     * Test initialize method
+     *
+     * @return void
+     */
+    public function testInitialize()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
 
     /**
      * Test index method
@@ -69,6 +81,26 @@ class BooksControllerTest extends IntegrationTestCase
      * @return void
      */
     public function testDelete()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test findEditors method
+     *
+     * @return void
+     */
+    public function testFindEditors()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test autocomplete method
+     *
+     * @return void
+     */
+    public function testAutocomplete()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

@@ -197,3 +197,63 @@ Stack Trace:
 #17 {main}
 
 
+2018-11-07 16:30:09 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-07 16:30:09 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'C:\\Program File...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-07 16:34:57 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-07 16:34:57 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'C:\\Program File...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-07 16:39:10 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-07 16:39:10 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'C:\\Program File...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-07 16:40:05 Error: Fatal Error (1): Class 'PHPUnit\Framework\BaseTestListener' not found in [C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php, line 28]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-07 16:40:05 Error: [Cake\Error\FatalErrorException] Class 'PHPUnit\Framework\BaseTestListener' not found in C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php on line 28
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'PHPUnit\\...', 'C:\\Program File...', 28)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

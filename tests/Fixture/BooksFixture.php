@@ -17,27 +17,19 @@ class BooksFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'author_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
-        'province_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
-        'title' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'release_date' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'created' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
-        'modified' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
-        '_indexes' => [
-            'author_id' => ['type' => 'index', 'columns' => ['author_id'], 'length' => []],
-            'province_id' => ['type' => 'index', 'columns' => ['province_id'], 'length' => []],
-            'author_id_2' => ['type' => 'index', 'columns' => ['author_id'], 'length' => []],
-            'province_id_2' => ['type' => 'index', 'columns' => ['province_id'], 'length' => []],
-        ],
+        'id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => false, 'default' => null, 'autoIncrement' => true, 'precision' => null, 'comment' => null],
+        'author_id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'autoIncrement' => null],
+        'province_id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'autoIncrement' => null],
+        'title' => ['type' => 'string', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'fixed' => null, 'collate' => null],
+        'release_date' => ['type' => 'string', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'fixed' => null, 'collate' => null],
+        'created' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null],
+        'modified' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null],
+        'editor_id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'autoIncrement' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-            'books_ibfk_1' => ['type' => 'foreign', 'columns' => ['author_id'], 'references' => ['authors', 'id'], 'update' => 'cascade', 'delete' => 'cascade', 'length' => []],
-            'books_ibfk_2' => ['type' => 'foreign', 'columns' => ['province_id'], 'references' => ['provinces', 'id'], 'update' => 'noAction', 'delete' => 'noAction', 'length' => []],
-        ],
-        '_options' => [
-            'engine' => 'InnoDB',
-            'collation' => 'utf8_unicode_ci'
+            'province_id_fk' => ['type' => 'foreign', 'columns' => ['province_id'], 'references' => ['provinces', 'id'], 'update' => 'cascade', 'delete' => 'cascade', 'length' => []],
+            'author_id_fk' => ['type' => 'foreign', 'columns' => ['author_id'], 'references' => ['authors', 'id'], 'update' => 'cascade', 'delete' => 'cascade', 'length' => []],
+            'editor_id_fk' => ['type' => 'foreign', 'columns' => ['editor_id'], 'references' => ['editors', 'id'], 'update' => 'cascade', 'delete' => 'cascade', 'length' => []],
         ],
     ];
     // @codingStandardsIgnoreEnd
@@ -56,8 +48,9 @@ class BooksFixture extends TestFixture
                 'province_id' => 1,
                 'title' => 'Lorem ipsum dolor sit amet',
                 'release_date' => 'Lorem ipsum dolor sit amet',
-                'created' => '2018-09-17 16:33:14',
-                'modified' => '2018-09-17 16:33:14'
+                'created' => '2018-11-07 17:42:16',
+                'modified' => '2018-11-07 17:42:16',
+                'editor_id' => 1
             ],
         ];
         parent::init();

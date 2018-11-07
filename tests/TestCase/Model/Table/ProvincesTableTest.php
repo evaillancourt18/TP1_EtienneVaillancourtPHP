@@ -16,7 +16,7 @@ class ProvincesTableTest extends TestCase
      *
      * @var \App\Model\Table\ProvincesTable
      */
-    public $Provinces;
+    public $ProvincesTable;
 
     /**
      * Fixtures
@@ -38,7 +38,7 @@ class ProvincesTableTest extends TestCase
     {
         parent::setUp();
         $config = TableRegistry::getTableLocator()->exists('Provinces') ? [] : ['className' => ProvincesTable::class];
-        $this->Provinces = TableRegistry::getTableLocator()->get('Provinces', $config);
+        $this->ProvincesTable = TableRegistry::getTableLocator()->get('Provinces', $config);
     }
 
     /**
@@ -48,7 +48,7 @@ class ProvincesTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->Provinces);
+        unset($this->ProvincesTable);
 
         parent::tearDown();
     }

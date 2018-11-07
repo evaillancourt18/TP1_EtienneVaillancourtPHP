@@ -16,7 +16,7 @@ class EditorsTableTest extends TestCase
      *
      * @var \App\Model\Table\EditorsTable
      */
-    public $Editors;
+    public $EditorsTable;
 
     /**
      * Fixtures
@@ -24,7 +24,8 @@ class EditorsTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.editors'
+        'app.editors',
+        'app.books'
     ];
 
     /**
@@ -36,7 +37,7 @@ class EditorsTableTest extends TestCase
     {
         parent::setUp();
         $config = TableRegistry::getTableLocator()->exists('Editors') ? [] : ['className' => EditorsTable::class];
-        $this->Editors = TableRegistry::getTableLocator()->get('Editors', $config);
+        $this->EditorsTable = TableRegistry::getTableLocator()->get('Editors', $config);
     }
 
     /**
@@ -46,7 +47,7 @@ class EditorsTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->Editors);
+        unset($this->EditorsTable);
 
         parent::tearDown();
     }

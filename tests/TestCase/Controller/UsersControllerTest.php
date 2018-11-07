@@ -21,6 +21,16 @@ class UsersControllerTest extends IntegrationTestCase
     ];
 
     /**
+     * Test initialize method
+     *
+     * @return void
+     */
+    public function testInitialize()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
      * Test index method
      *
      * @return void
@@ -41,11 +51,41 @@ class UsersControllerTest extends IntegrationTestCase
     }
 
     /**
+     * Test login method
+     *
+     * @return void
+     */
+    public function testLogin()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test logout method
+     *
+     * @return void
+     */
+    public function testLogout()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
      * Test add method
      *
      * @return void
      */
     public function testAdd()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test addVisitor method
+     *
+     * @return void
+     */
+    public function testAddVisitor()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
@@ -66,6 +106,46 @@ class UsersControllerTest extends IntegrationTestCase
      * @return void
      */
     public function testDelete()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test isAuthorized method
+     *
+     * @return void
+     */
+    public function testIsAuthorized()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test aPropos method
+     *
+     * @return void
+     */
+    public function testAPropos()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test activate method
+     *
+     * @return void
+     */
+    public function testActivate()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test sendEmail method
+     *
+     * @return void
+     */
+    public function testSendEmail()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

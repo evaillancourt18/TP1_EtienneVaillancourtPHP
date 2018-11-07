@@ -22,6 +22,26 @@ class ProvincesControllerTest extends IntegrationTestCase
     ];
 
     /**
+     * Test initialize method
+     *
+     * @return void
+     */
+    public function testInitialize()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test getByCountry method
+     *
+     * @return void
+     */
+    public function testGetByCountry()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
      * Test index method
      *
      * @return void
