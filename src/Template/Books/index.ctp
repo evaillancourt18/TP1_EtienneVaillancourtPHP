@@ -67,6 +67,7 @@
                 <td class="actions">
 		
                     <?= $this->Html->link(__('View'), ['action' => 'view', $book->id]) ?>
+					<?= $this->Html->link(__('(pdf)'), ['action' => 'view', $book->id . '.pdf']) ?>
 					<?php
 		if($loguser['type']==2){
 		?>

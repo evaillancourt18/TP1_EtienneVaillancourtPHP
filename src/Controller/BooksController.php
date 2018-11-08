@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 
+
 /**
  * Books Controller
  *
@@ -10,12 +11,13 @@ use App\Controller\AppController;
  *
  * @method \App\Model\Entity\Book[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
+ 
 class BooksController extends AppController
 {
 	
 			public function initialize() {
 				parent::initialize();
-				$this->Auth->allow(['logout','autocomplete', 'findEditors']);
+				$this->Auth->allow(['RequestHandler','logout','autocomplete', 'findEditors']);
 			}
 
     /**
@@ -45,6 +47,12 @@ class BooksController extends AppController
         $book = $this->Books->get($id, [
             'contain' => ['Authors', 'Provinces', 'Categories']
         ]);
+		$this->viewBuilder()->options([
+                'pdfConfig' => [
+                    'orientation' => 'portrait',
+                    'filename' => 'Book_' . $id
+                ]
+            ]);
 
         $this->set('book', $book);
     }
