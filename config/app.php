@@ -315,7 +315,7 @@ return [
             //'port' => 'non_standard_port_number',
             'username' => 'root',
             'password' => '',
-            'database' => ROOT . DS . 'sqlite' . DS . 'Test',
+            'database' => ROOT . DS . 'sqlite' . DS . 'Test.sqlite',
             //'encoding' => 'utf8mb4',
             'timezone' => 'UTC',
             'cacheMetadata' => true,

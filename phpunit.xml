@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="App\Test\TestCase\Model\Table\AuthorsTableTest" file="C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\tests\TestCase\Model\Table\AuthorsTableTest.php" tests="3" assertions="0" errors="3" failures="0" skipped="0" time="0.015006">
-    <testcase name="testInitialize" class="App\Test\TestCase\Model\Table\AuthorsTableTest" classname="App.Test.TestCase.Model.Table.AuthorsTableTest" file="C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\tests\TestCase\Model\Table\AuthorsTableTest.php" line="62" assertions="0" time="0.013968">
+  <testsuite name="App\Test\TestCase\Model\Table\AuthorsTableTest" file="C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\tests\TestCase\Model\Table\AuthorsTableTest.php" tests="3" assertions="0" errors="3" failures="0" skipped="0" time="0.014752">
+    <testcase name="testInitialize" class="App\Test\TestCase\Model\Table\AuthorsTableTest" classname="App.Test.TestCase.Model.Table.AuthorsTableTest" file="C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\tests\TestCase\Model\Table\AuthorsTableTest.php" line="62" assertions="0" time="0.014132">
       <error type="Cake\Datasource\Exception\MissingDatasourceConfigException">App\Test\TestCase\Model\Table\AuthorsTableTest::testInitialize
 Cake\Datasource\Exception\MissingDatasourceConfigException: The datasource configuration "default" was not found.
 
@@ -10,7 +10,7 @@ C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\
 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\tests\TestCase\Model\Table\AuthorsTableTest.php:42
 </error>
     </testcase>
-    <testcase name="testValidationDefault" class="App\Test\TestCase\Model\Table\AuthorsTableTest" classname="App.Test.TestCase.Model.Table.AuthorsTableTest" file="C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\tests\TestCase\Model\Table\AuthorsTableTest.php" line="72" assertions="0" time="0.000493">
+    <testcase name="testValidationDefault" class="App\Test\TestCase\Model\Table\AuthorsTableTest" classname="App.Test.TestCase.Model.Table.AuthorsTableTest" file="C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\tests\TestCase\Model\Table\AuthorsTableTest.php" line="72" assertions="0" time="0.000325">
       <error type="Cake\Datasource\Exception\MissingDatasourceConfigException">App\Test\TestCase\Model\Table\AuthorsTableTest::testValidationDefault
 Cake\Datasource\Exception\MissingDatasourceConfigException: The datasource configuration "default" was not found.
 
@@ -19,7 +19,7 @@ C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\vendor\cakephp\cakephp\
 C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\tests\TestCase\Model\Table\AuthorsTableTest.php:42
 </error>
     </testcase>
-    <testcase name="testBuildRules" class="App\Test\TestCase\Model\Table\AuthorsTableTest" classname="App.Test.TestCase.Model.Table.AuthorsTableTest" file="C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\tests\TestCase\Model\Table\AuthorsTableTest.php" line="82" assertions="0" time="0.000545">
+    <testcase name="testBuildRules" class="App\Test\TestCase\Model\Table\AuthorsTableTest" classname="App.Test.TestCase.Model.Table.AuthorsTableTest" file="C:\Program Files (x86)\Ampps\www\TP1_EtienneVaillancourt\tests\TestCase\Model\Table\AuthorsTableTest.php" line="82" assertions="0" time="0.000295">
       <error type="Cake\Datasource\Exception\MissingDatasourceConfigException">App\Test\TestCase\Model\Table\AuthorsTableTest::testBuildRules
 Cake\Datasource\Exception\MissingDatasourceConfigException: The datasource configuration "default" was not found.
 

@@ -30,6 +30,21 @@ use Cake\I18n\I18n;
  */
 class AppController extends Controller
 {
+	
+	use \Crud\Controller\ControllerTrait;
+
+    public $components = [
+        'RequestHandler',
+        'Crud.Crud' => [
+            'actions' => [
+                'Crud.Index',
+                'Crud.View',
+                'Crud.Add',
+                'Crud.Edit',
+                'Crud.Delete'
+            ],
+        ]
+    ];
 
     /**
      * Initialization hook method.
@@ -69,7 +84,7 @@ class AppController extends Controller
 
     // Allow the display action so our pages controller
     // continues to work. Also enable the read only actions.
-    $this->Auth->allow(['display','changelang','addVisitor','aPropos','activate','login']);
+    $this->Auth->allow(['display','changelang','addVisitor','aPropos','activate','login','categoryAction']);
 
         /*
          * Enable the following component for recommended CakePHP security settings.

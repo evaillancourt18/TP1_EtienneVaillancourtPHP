@@ -1,58 +1,77 @@
 <?php
-/**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\Category[]|\Cake\Collection\CollectionInterface $categories
- */
- $loguser = $this->request->session()->read('Auth.User');
+$urlToRestApi = $this->Url->build('/api/categories', true);
+echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['block' => true]);
+echo $this->Html->script('Categories/index', ['block' => 'scriptBottom']);
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Category'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Books'), ['controller' => 'Books', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Book'), ['controller' => 'Books', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="categories index large-9 medium-8 columns content">
-    <h3><?= __('Categories') ?></h3>
-    <table cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                <th scope="col"><?= $this->Paginator->sort('name') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($categories as $category): ?>
-            <tr>
-                <td><?= h($category->name) ?></td>
-                <td><?= h($category->created) ?></td>
-                <td><?= h($category->modified) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $category->id]) ?>
-					<?php
-				if($loguser['type']==2){
-				?>	
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $category->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $category->id], ['confirm' => __('Are you sure you want to delete # {0}?', $category->id)]) ?>
-					<?php
-				}
-				?>	
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
-    </div>
-</div>
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+		
+        <title>Crud PHP Ajax Example</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="panel panel-default categories-content">
+                    <div class="panel-heading">Categories <a href="javascript:void(0);" class="glyphicon glyphicon-plus" id="addLink" onclick="javascript:$('#addForm').slideToggle();">Add</a></div>
+                    <div class="panel-body none formData" id="addForm">
+                        <h2 id="actionLabel">Add Category</h2>
+                        <form class="form" id="categoryForm">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control" name="name" id="name"/>
+                            </div>
+                            <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#addForm').slideUp();">Cancel</a>
+                            <a href="javascript:void(0);" class="btn btn-success" onclick="categoryAction('add')">Add Category</a>
+                        </form>
+                    </div>
+                    <div class="panel-body none formData" id="editForm">
+                        <h2 id="actionLabel">Edit Category</h2>
+                        <form class="form" id="categoryForm">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control" name="name" id="nameEdit"/>
+                            </div>
+                            <input type="hidden" class="form-control" name="id" id="idEdit"/>
+                            <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a>
+                            <a href="javascript:void(0);" class="btn btn-success" onclick="categoryAction('edit')">Update Category</a>
+                        </form>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                            </tr>
+                        </thead>
+                        <tbody id="categoryData">
+                            <?php
+
+                                foreach ($categories as $category):
+                                    ?>
+                                    <tr>
+										<td><?php echo $category['id']; ?></td>
+                                        <td><?php echo $category['name']; ?></td>
+                                        <td>
+                                            <a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editCategory('<?php echo $category['id']; ?>')"></a>
+                                            <a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm('Are you sure to delete data?') ? categoryAction('delete', '<?php echo $category['id']; ?>') : false;"></a>
+                                        </td>
+                                    </tr>
+                                <?php endforeach;?>
+                                
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+	<?= $this->fetch('scriptLibraries') ?>
+        <?= $this->fetch('script'); ?>
+        <?= $this->fetch('scriptBottom') ?>   
+</html>

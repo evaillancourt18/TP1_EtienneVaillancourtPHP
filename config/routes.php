@@ -49,12 +49,18 @@ Router::prefix('Admin', function ($routes) { $routes->fallbacks('InflectedRoute'
  */
 Router::defaultRouteClass(DashedRoute::class);
 
+	Router::prefix('api', function ($routes) {
+		$routes->extensions(['json', 'xml']);
+		$routes->resources('Categories');
+	});
+
 Router::scope('/', function (RouteBuilder $routes) {
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
      * its action called 'display', and we pass a param to select the view file
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
+	 
     $routes->connect('/', ['controller' => 'users', 'action' => 'login', 'home']);
 
     /**
