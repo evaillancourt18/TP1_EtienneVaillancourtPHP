@@ -21,22 +21,24 @@ and open the template in the editor.
                 <div class="panel panel-default categories-content">
                     <div class="panel-heading">Categories <a href="javascript:void(0);" class="glyphicon glyphicon-plus" id="addLink" onclick="javascript:$('#addForm').slideToggle();">Add</a></div>
                     <div class="panel-body none formData" id="addForm">
-                        <h2 id="actionLabel">Add Category</h2>
+                        <h2><?= __('Add Category') ?></h2>
                         <form class="form" id="categoryForm">
                             <div class="form-group">
-                                <label>Name</label>
-                                <input type="text" class="form-control" name="name" id="name"/>
+                                <?php
+								echo $this->Form->control('name');
+								?>
                             </div>
                             <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#addForm').slideUp();">Cancel</a>
                             <a href="javascript:void(0);" class="btn btn-success" onclick="categoryAction('add')">Add Category</a>
                         </form>
                     </div>
                     <div class="panel-body none formData" id="editForm">
-                        <h2 id="actionLabel">Edit Category</h2>
+                        <h2 id="actionLabel"><?= __('Edit Category') ?></h2>
                         <form class="form" id="categoryForm">
                             <div class="form-group">
-                                <label>Name</label>
-                                <input type="text" class="form-control" name="name" id="nameEdit"/>
+                                <?php
+								echo $this->Form->control('name', ['id' => 'nameEdit']);
+								?>
                             </div>
                             <input type="hidden" class="form-control" name="id" id="idEdit"/>
                             <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a>

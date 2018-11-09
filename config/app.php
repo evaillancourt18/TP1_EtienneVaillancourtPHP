@@ -318,6 +318,7 @@ return [
             'database' => ROOT . DS . 'sqlite' . DS . 'Test.sqlite',
             //'encoding' => 'utf8mb4',
             'timezone' => 'UTC',
+			'flags' => [],
             'cacheMetadata' => true,
             'quoteIdentifiers' => false,
             'log' => false,

@@ -4,6 +4,7 @@ namespace App\Test\TestCase\Model\Table;
 use App\Model\Table\BooksTable;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
+use Cake\Validation\Validator;
 
 /**
  * App\Model\Table\BooksTable Test Case
@@ -16,7 +17,7 @@ class BooksTableTest extends TestCase
      *
      * @var \App\Model\Table\BooksTable
      */
-    public $BooksTable;
+    public $Books;
 
     /**
      * Fixtures
@@ -42,7 +43,7 @@ class BooksTableTest extends TestCase
     {
         parent::setUp();
         $config = TableRegistry::getTableLocator()->exists('Books') ? [] : ['className' => BooksTable::class];
-        $this->BooksTable = TableRegistry::getTableLocator()->get('Books', $config);
+        $this->Books = TableRegistry::getTableLocator()->get('Books', $config);
     }
 
     /**
@@ -52,7 +53,7 @@ class BooksTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->BooksTable);
+        unset($this->Books);
 
         parent::tearDown();
     }
@@ -65,6 +66,85 @@ class BooksTableTest extends TestCase
     public function testInitialize()
     {
         $this->markTestIncomplete('Not implemented yet.');
+    }
+	
+	public function testSaving() {
+        $data = [
+            'id' => 3,
+                'author_id' => 1,
+                'province_id' => 1,
+                'title' => 'Test1',
+                'release_date' => 'Test1',
+                'created' => null,
+                'modified' => null,
+                'editor_id' => 1,
+				'active'=>0
+        ];
+        $book = $this->Books->newEntity($data);
+        $countBeforeSave = $this->Books->find()->count();
+        $this->Books->save($book);
+        $countAfterSave = $this->Books->find()->count();
+        $this->assertEquals($countAfterSave, $countBeforeSave + 1);
+    }
+	
+	public function testEditing() {
+        $book = $this->Books->find('all', ['conditions' => ['active' => true]])->first();
+        $book->active = false;
+        $this->Books->save($book);
+        $this->assertEquals(false, $book->active);
+    }
+	
+	public function testDeleting() {
+        $countBeforeDelete = $this->Books->find()->count();
+        $book = $this->Books->find()->first();
+        $this->Books->delete($book);
+        $countAfterDelete = $this->Books->find()->count();
+        $this->assertEquals($countAfterDelete, $countBeforeDelete - 1);
+    }
+	
+	public function testValidateTitleSuccess () {
+        $book = $this->Books->find('all')->first()->toArray();
+        $errors = $this->Books->validationDefault(new Validator())->errors($book);
+        $this->assertTrue(empty($errors));
+    }
+	
+	public function testValidateTitleFail () {
+		$book = $this->Books->find('all')->first()->toArray();
+		$book['title'] = "";
+		$errors = $this->Books->validationDefault(new Validator())->errors($book);
+		$this->assertTrue(!empty($errors['title']));
+    }
+	
+	    public function testFindActive()
+    {
+        $query = $this->Books->find('active');
+        $this->assertInstanceOf('Cake\ORM\Query', $query);
+        $result = $query->hydrate(false)->toArray();
+        $expected = [
+            [
+                'id' => 1,
+                'author_id' => 1,
+                'province_id' => 1,
+                'title' => 'Test1',
+                'release_date' => 'Test1',
+                'created' => null,
+                'modified' => null,
+                'editor_id' => 1,
+				'active'=>1
+            ],
+            [
+                'id' => 2,
+                'author_id' => 1,
+                'province_id' => 1,
+                'title' => 'Test2',
+                'release_date' => 'Test2',
+                'created' => null,
+                'modified' => null,
+                'editor_id' => 1,
+				'active'=>1
+            ]
+        ];
+        $this->assertEquals($expected, $result);
     }
 
     /**

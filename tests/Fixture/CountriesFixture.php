@@ -37,9 +37,9 @@ class CountriesFixture extends TestFixture
         $this->records = [
             [
                 'id' => 1,
-                'name' => 'Lorem ipsum dolor sit amet',
-                'created' => '2018-11-07 17:42:17',
-                'modified' => '2018-11-07 17:42:17'
+                'name' => 'Test One',
+                'created' => 'null',
+                'modified' => 'null'
             ],
         ];
         parent::init();

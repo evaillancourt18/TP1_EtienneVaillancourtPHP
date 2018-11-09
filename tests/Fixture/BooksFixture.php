@@ -25,6 +25,7 @@ class BooksFixture extends TestFixture
         'created' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null],
         'editor_id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'autoIncrement' => null],
+		'active' => ['type' => 'boolean', 'length' => null, 'null' => true, 'default' => '1', 'precision' => null, 'comment' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
             'province_id_fk' => ['type' => 'foreign', 'columns' => ['province_id'], 'references' => ['provinces', 'id'], 'update' => 'cascade', 'delete' => 'cascade', 'length' => []],
@@ -48,9 +49,10 @@ class BooksFixture extends TestFixture
                 'province_id' => 1,
                 'title' => 'Lorem ipsum dolor sit amet',
                 'release_date' => 'Lorem ipsum dolor sit amet',
-                'created' => '2018-11-07 17:42:16',
-                'modified' => '2018-11-07 17:42:16',
-                'editor_id' => 1
+                'created' => null,
+                'modified' => null,
+                'editor_id' => 1,
+				'active'=>1
             ],
         ];
         parent::init();
