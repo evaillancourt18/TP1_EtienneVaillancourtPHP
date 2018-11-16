@@ -12,6 +12,19 @@ use App\Controller\AppController;
  */
 class CountriesController extends AppController
 {
+	
+	public function getCountries() {
+        $this->autoRender = false; // avoid to render view
+
+        $countries = $this->Countries->find('all', [
+            'contain' => ['Provinces'],
+        ]);
+
+        $countriesJ = json_encode($countries);
+        $this->response->type('json');
+        $this->response->body($countriesJ);
+
+    }
 
     /**
      * Index method
