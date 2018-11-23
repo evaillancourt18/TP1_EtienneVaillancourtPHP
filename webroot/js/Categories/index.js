@@ -1,97 +1,137 @@
-function getCategories() {
-    $.ajax({
-        type: 'GET',
-        url: urlToRestApi,
-        dataType: "json",
-        success:
-                function (categories) {
-                    var categoryTable = $('#categoryData');
-                    categoryTable.empty();
-                    var count = 1;
-                    $.each(categories.data, function (key, value)
-                    {
-                        var editDeleteButtons = '</td><td>' +
-                                '<a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editCategory(' + value.id + ')"></a>' +
-                                '<a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm(\'Are you sure to delete data?\') ? categoryAction(\'delete\', ' + value.id + ') : false;"></a>' +
-                                '</td></tr>';
-                        categoryTable.append('<tr><td>' + value.id + '</td><td>' + value.name + '</td><td>' + editDeleteButtons);
-                        count++;
-                    });
+var app = angular.module('app',[]);
 
-                }
-    });
-}
-
-/* Function takes a jquery form
- and converts it to a JSON dictionary */
-function convertFormToJSON(form) {
-    var array = $(form).serializeArray();
-    var json = {};
-
-    $.each(array, function () {
-        json[this.name] = this.value || '';
-    });
-
-    return json;
-}
-
-/*
- $('#categoryAddForm').submit(function (e) {
- e.preventDefault();
- var data = convertFormToJSON($(this));
- alert(data);
- console.log(data);
- });
- */
-
-function categoryAction(type, id) {
-    id = (typeof id == "undefined") ? '' : id;
-    var statusArr = {add: "added", edit: "updated", delete: "deleted"};
-    var requestType = '';
-    var categoryData = '';
-    var ajaxUrl = urlToRestApi;
-    if (type == 'add') {
-        requestType = 'POST';
-        categoryData = convertFormToJSON($("#addForm").find('.form'));
-    } else if (type == 'edit') {
-        requestType = 'PUT';
-		ajaxUrl = ajaxUrl + "/" + idEdit.value;
-        categoryData = convertFormToJSON($("#editForm").find('.form'));
-		
-    } else {
-        requestType = 'DELETE';
-        ajaxUrl = ajaxUrl + "/" + id;
+app.controller('CategoryCRUDController', ['$scope','CategoryCRUDService', function ($scope,CategoryCRUDService) {
+	  
+    $scope.updateCategory = function () {
+        CategoryCRUDService.updateCategory($scope.category.id,$scope.category.name)
+          .then(function success(response){
+              $scope.message = 'Category data updated!';
+              $scope.errorMessage = '';
+              $scope.category.id = '';
+              $scope.category.name = '';
+              $scope.getAllCategories();
+          },
+          function error(response){
+              $scope.errorMessage = 'Error updating Product Type!';
+              $scope.message = '';
+          });
     }
-    $.ajax({
-        type: requestType,
-        url: ajaxUrl,
-        dataType: "json",
-        contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(categoryData),
-        success: function (msg) {
-            if (msg) {
-                alert('Category data has been ' + statusArr[type] + ' successfully.');
-                getCategories();
-                $('.form')[0].reset();
-                $('.formData').slideUp();
-            } else {
-                alert('Some problem occurred, please try again.');
-            }
-        }
-    });
-}
+    
+    $scope.getCategory = function ($id) {
 
-/*** à déboguer ... ***/
-function editCategory(id) {
-    $.ajax({
-        type: 'GET',
-        dataType: 'JSON',
-        url: urlToRestApi+ "/" + id,
-        success: function (data) {
-            $('#idEdit').val(data.data.id);
-            $('#nameEdit').val(data.data.name);
-            $('#descriptionEdit').val(data.data.description);
-            $('#editForm').slideDown();
+        CategoryCRUDService.getCategory($id)
+          .then(function success(response){
+              $scope.category = response.data.data;
+              $scope.category.id = $id;
+              $scope.message='';
+              $scope.errorMessage = '';
+              $scope.getAllCategories();
+              
+          },
+          function error (response ){
+              $scope.message = '';
+              if (response.status === 404){
+                  $scope.errorMessage = 'Category not found!';
+              }
+              else {
+                  $scope.errorMessage = "Error getting Category!";
+              }
+          });
+    }
+    
+    $scope.addCategory = function () {
+        if ($scope.category != null && $scope.category.name) {
+            CategoryCRUDService.addCategory($scope.category.name)
+              .then (function success(response){
+                  $scope.message = 'Category added!';
+                  $scope.errorMessage = '';
+                  $scope.category.id = '';
+                  $scope.category.name = '';
+                  $scope.getAllCategories();
+              },
+              function error(response){
+                  $scope.errorMessage = 'Error adding Category!';
+                  $scope.message = '';
+            });
         }
-    });
-}
+        else {
+            $scope.errorMessage = 'Please enter a name!';
+            $scope.message = '';
+        }
+    }
+    
+    $scope.deleteCategory = function ($id) {
+        CategoryCRUDService.deleteCategory($id)
+          .then (function success(response){
+              $scope.message = 'Product Type deleted!';
+              $scope.category = null;
+              $scope.errorMessage='';
+              $scope.getAllCategories();
+          },
+          function error(response){
+              $scope.errorMessage = 'Error deleting Category!';
+              $scope.message='';
+          })
+    }
+    
+    $scope.getAllCategories = function () {
+        CategoryCRUDService.getAllCategories()
+          .then(function success(response){
+              $scope.categories = response.data.data;
+              $scope.message='';
+              $scope.errorMessage = '';
+          },
+          function error (response ){
+              $scope.message='';
+              $scope.errorMessage = 'Error getting Categories!';
+          });
+    }
+    $scope.getAllCategories();
+}]);
+
+app.service('CategoryCRUDService',['$http', function ($http) {
+	
+    this.getCategory = function getCategory(categoryId){
+        return $http({
+          method: 'GET',
+          url: urlToRestApi+'/'+categoryId,
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        });
+	}
+	
+    this.addCategory = function addCategory(name){
+        return $http({
+          method: 'POST',
+          url: urlToRestApi,
+          data: {name:name},
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        });
+    }
+	
+    this.deleteCategory = function deleteCategory(id){
+        return $http({
+          method: 'DELETE',
+          url: urlToRestApi+'/'+id ,
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        })
+    }
+	
+    this.updateCategory = function updateCategory(id,name){
+        return $http({
+          method: 'PATCH',
+          url: urlToRestApi+'/'+id,
+          data: {name:name},
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        })
+    }
+	
+    this.getAllCategories = function getAllCategories(){
+        return $http({
+          method: 'GET',
+          url: urlToRestApi,
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+
+        });
+    }
+
+}]);
