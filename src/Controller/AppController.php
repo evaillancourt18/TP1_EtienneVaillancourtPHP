@@ -18,6 +18,8 @@ use Cake\Controller\Controller;
 
 use Cake\Event\Event;
 
+use \Crud\Controller\ControllerTrait;
+
 use Cake\I18n\I18n;
 
 /**

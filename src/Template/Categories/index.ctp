@@ -9,7 +9,44 @@ echo $this->Html->script('Categories/index', ['block' => 'scriptBottom']);
 			<meta charset="UTF-8">
 			<title>Categories index</title>
 		</head>
+		
 		<body>
+		 <div ng-controller = "usersCtrl">
+
+                <div id="logDiv" style="margin: 10px 0 20px 0;"><a href="javascript:void(0);" class="glyphicon glyphicon-log-in" id="login-btn" onclick="javascript:$('#loginForm').slideToggle();">Login</a></div>
+
+                <div class="none formData" id="loginForm">
+                    <form class="form" enctype='application/json'>
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input ng-model="username" type="text" class="form-control" id="username" name="username" style="width: 250px" />
+                            <label>Password</label>
+                            <input ng-model="password" type="password" class="form-control" id="password" name="password"  style="width: 250px"/>
+                        </div>
+                        <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#loginForm').slideUp(); emptyInput();">Cancel</a>
+                        <a href="javascript:void(0);" class="btn btn-success" ng-click="login()">Submit</a>
+                    </form>
+                </div>
+
+                <div class="panel-body none formData" id="changeForm">
+                    <form class="form" enctype='application/json'>
+                        <div class="form-group">
+                            <label>New password</label>
+                            <input ng-model="newPassword" type="password" class="form-control" id="form-password" name="form-password" style="width: 250px" />
+                        </div>
+                        <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#changeForm').slideUp(); emptyInput();">Cancel</a>
+                        <a href="javascript:void(0);" class="btn btn-success" ng-click="changePassword()">Submit</a>
+                        <a href="javascript:void(0);" class="btn btn-warning" ng-click="logout()">Logout</a>
+                    </form>
+                </div>
+                <br>
+                <div>
+                    <p style="color: green;">{{messageLogin}}</p>
+                    <p style="color: red;">{{errorLogin}}</p>
+                </div>
+                <br>
+
+		 </div>
 			<div ng-controller="CategoryCRUDController">
 				<table>
 					<tr>

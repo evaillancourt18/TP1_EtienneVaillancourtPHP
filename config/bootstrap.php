@@ -73,6 +73,7 @@ use Cake\Utility\Security;
     ]);
 
 	Plugin::load('CakePdf', ['bootstrap' => true]);
+	Plugin::load('ADmad/JwtAuth');
 /*
  * Read configuration file and inject configuration into various
  * CakePHP classes.
