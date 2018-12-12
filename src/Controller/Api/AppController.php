@@ -29,7 +29,6 @@ class AppController extends Controller
             ]
         ]);
         $this->loadComponent('Auth', [
-            //'storage' => 'Memory',
             'authenticate' => [
                 'Form' => [
                     'scope' => ['Users.active' => 1]

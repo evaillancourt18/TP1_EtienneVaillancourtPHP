@@ -19,15 +19,16 @@
 	    <div class="image_upload_div">
         <?php  
 			echo $this->Form->create('image',
-			array('url'=>array('controller'=>'Files','action'=>'add'),
+			array('url'=>array('action'=>'add'),
 			'method'=>'post',
 			'id'=>'my-awesome-dropzone',
 			'class'=>'dropzone',
 			'type'=>'file',
 			'autocomplete'=>'off'));
+			$this->Form->unlockField('file');
 		?>
                             
-        <?php    echo $this->Form->end();?>
+        <?php echo $this->Form->end();?>
         </div>
     <table cellpadding="0" cellspacing="0">
         <thead>
