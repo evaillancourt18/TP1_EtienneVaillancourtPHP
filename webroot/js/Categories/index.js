@@ -1,8 +1,19 @@
+var onloadCallback = function () {
+    widgetId1 = grecaptcha.render('example1', {
+        'sitekey': '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+    });
+};
+
 var app = angular.module('app',[]);
 
 app.controller('usersCtrl', function ($scope, $compile, $http) {
 
     $scope.login = function () {
+		
+		if (grecaptcha.getResponse(widgetId1) === '') {
+                $scope.captcha_status = 'Please verify captcha';
+                return;
+		}
 
         var req = {
             method: 'POST',

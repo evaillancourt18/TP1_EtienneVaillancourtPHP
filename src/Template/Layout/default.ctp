@@ -48,6 +48,7 @@ echo $this->Html->script([
                 ], ['block' => 'scriptLibraries']
         );
         ?>
+		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
     </head>
     <body>
         <nav class="top-bar expanded" data-topbar role="navigation">
